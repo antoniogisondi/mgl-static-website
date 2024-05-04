@@ -14,7 +14,7 @@ header {
     border: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 890px) {
     .logo-text {
         display: none; /* Hide the text next to the logo on small screens */
     }
