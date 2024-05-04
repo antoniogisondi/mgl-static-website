@@ -19,3 +19,46 @@ header {
         display: none; /* Hide the text next to the logo on small screens */
     }
 }
+/* Custom navbar breakpoint for toggling collapse at 890px */
+@media (max-width: 889px) {
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-expand-custom .navbar-collapse {
+        display: none !important;
+    }
+
+    .navbar-expand-custom .navbar-collapse.show {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-custom .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-expand-custom .dropdown-menu {
+        position: static;
+        float: none;
+    }
+}
+
+@media (min-width: 890px) {
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-expand-custom .navbar-collapse {
+        display: flex !important;
+    }
+
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-expand-custom .navbar-nav .nav-item {
+        margin-right: 10px;  /* Adjust spacing between items */
+    }
+}

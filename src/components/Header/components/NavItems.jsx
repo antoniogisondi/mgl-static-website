@@ -3,7 +3,7 @@ import React from "react";
 const NavItems = () => {
     return (
         <div className="col-auto ms-auto">
-            <nav className="navbar navbar-expand-md navbar-light">  {/* Changed to navbar-expand-md */}
+            <nav className="navbar navbar-expand-custom navbar-light"> {/* Use custom class here */}
                 <button
                     className="navbar-toggler"
                     type="button"
