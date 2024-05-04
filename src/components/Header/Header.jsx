@@ -13,9 +13,9 @@ const Header = () => {
 
         <NavItems />                {/* Items della navbar */}
 
-        <div className="col-auto">
+        {/* <div className="col-auto">
             <button className="btn btn-primary" type="button">Get a Demo</button>
-        </div>
+        </div> */}
 
     </div>
 
