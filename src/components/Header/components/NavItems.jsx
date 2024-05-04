@@ -18,14 +18,14 @@ const NavItems = () => {
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Why JustGo?</a>
+                            <a className="nav-link active" href="#">81/08</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Features</a>
+                            <a className="nav-link" href="#">Servizi</a>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Community
+                                Portfolio
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a className="dropdown-item" href="#">Link 1</a></li>
@@ -33,11 +33,11 @@ const NavItems = () => {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">JustGo Blog</a>
+                            <a className="nav-link" href="#">Chi siamo</a>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownPricing" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Pricing
+                                Contattaci
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownPricing">
                                 <li><a className="dropdown-item" href="#">Plan 1</a></li>

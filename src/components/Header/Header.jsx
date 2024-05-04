@@ -5,7 +5,7 @@ import NavItems from "./components/NavItems";
 
 const Header = () => {
     return(
-<header className="container-fluid">
+<header className="container-fluid col-11">
 
     <div className="row align-items-center">
 
