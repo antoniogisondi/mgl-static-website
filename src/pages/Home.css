@@ -1,0 +1,42 @@
+.home-container {
+    min-height: 100vh; /* Full height of the viewport */
+    padding-top: 10px; /* Reduced top padding */
+}
+
+.text-container h1 {
+    font-size: 2.5vw; /* Responsive font size */
+}
+
+.text-container p {
+    font-size: 1.2vw; /* Responsive font size */
+}
+
+.btn-primary {
+    font-size: 1vw; /* Adjust button font size for responsiveness */
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensures image takes up full column width */
+}
+
+@media (min-width: 992px) { /* Adjustments for larger screens */
+    .text-container {
+        padding-right: 2vw; /* Reduced padding for text on large screens */
+    }
+    .illustration {
+        width: 45%; /* Makes the image larger */
+        position: relative;
+        left: 10%; /* Moves the image further to the right */
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-container h1 {
+        font-size: 3vw; /* Larger font size for very large screens */
+    }
+    .text-container p {
+        font-size: 1.5vw; /* Larger font size for paragraph on very large screens */
+    }
+}
