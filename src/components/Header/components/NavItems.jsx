@@ -1,26 +1,7 @@
 import React from "react";
-import './Header.css'
 
-const Header = () => {
+const NavItems = () => {
     return(
-<header className="container-fluid">
-
-    <div className="row align-items-center">
-
-        {/* immagine e testo dell'immagine */}
-
-        <div className="col-auto" style={{ paddingLeft: '30px' }}> 
-            <img src="../../public/helmet.png" alt="Company logo" className="Logo" style={{height: '50px' }}/>
-            <span className="logo-text ms-3 d-none d-md-inline" style={{ fontWeight: 'bold' }}>MGL Consulting s.r.l.s</span> {/* Text next to the logo */}
-        </div>
-
-        {/*  */}
-
-
-
-
-        {/* Items della navbar */}
-
         <div className="col-auto ms-auto">
             <nav className="navbar navbar-expand navbar-light">
                 <ul className="navbar-nav">
@@ -50,21 +31,7 @@ const Header = () => {
                 </ul>
             </nav>
         </div>
-
-        {/*  */}
-
-
-
-
-        <div className="col-auto">
-            <button className="btn btn-primary" type="button">Get a Demo</button>
-        </div>
-
-    </div>
-
-</header>
-
     )
 }
 
-export default Header
+export default NavItems
