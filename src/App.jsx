@@ -3,6 +3,8 @@ import Header from "./components/Header/Header";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+// index.js or App.js
+import $ from 'jquery';
 
 function App() {
 
