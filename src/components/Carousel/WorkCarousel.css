@@ -1,0 +1,109 @@
+/*#region Carousel contents */
+.text-container h1 {
+    font-size: 4.5vw; /* Responsive font size */
+    font-weight: bold;
+}
+
+.text-container p {
+    font-size: 2.5vw; /* Responsive font size */
+}
+
+.important-text {
+    color: #2194f3;
+}
+
+.btn-primary {
+    font-size: 17px !important; 
+    background-color: #2194f3 !important;
+    border: 1px solid #2194f3;
+    padding: 13px 30px !important;
+}
+
+.illustration-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+    width: 80%; /* Adjust the image size */
+    position: relative;
+    left: -5%;
+}
+
+/*#endregion */
+
+/*#region Carousel */
+/************* CAROUSEL SECTION *************/
+
+.carousel-container {
+    min-height: 100vh; /* Ensure full viewport height */
+    padding-top: 40px; /* Reduced top padding */
+    background-color: #f5f7fa;
+}
+.carousel-indicators-container {
+    margin-top: -20px; /* Bring the indicators closer to the carousel */
+    margin-bottom: 20px; /* Extra spacing from the content below */
+}
+
+.carousel-indicators {
+    display:flex;
+    list-style: none;
+    padding-top: 130px;
+    margin: 0;
+    position: relative;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.carousel-indicators li.active {
+    background-color: #4285f4; /* Adjust the color as needed */
+}
+
+/*#endregion */
+
+/************* CAROUSEL SECTION *************/
+
+/*#region Media-queries */
+@media (min-width: 992px) { /* Adjustments for larger screens */
+    .text-container {
+        padding-right: 2vw; /* Reduced padding for text on large screens */
+    }
+    .illustration {
+        width: 70%; /* Adjust the image size */
+        left: -3%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text-container h1 {
+        font-size: 3.2vw; /* Larger font size for very large screens */
+    }
+    .text-container p {
+        font-size: 1vw; /* Larger font size for paragraph on very large screens */
+    }
+
+    .illustration {
+        width: 60%; /* Further adjust image size */
+        left: -5%;
+    }
+
+    .btn-logo {
+        display: block;
+        font-size: 17px !important; /* Adjust button font size for responsiveness */
+        padding: 13px 30px !important;
+        color: #ffffff; /* Set the text color of the button */
+    }
+}
+/*#endregion */
