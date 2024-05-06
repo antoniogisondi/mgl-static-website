@@ -1,0 +1,31 @@
+.logo-footer {
+    width: 75%;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    color: #333;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-content ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    color: #000;
+}

@@ -3,11 +3,11 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <header className="container-fluid gx-0 gy-0 py-0">
-            <nav className="navbar navbar-expand-lg bg-body-white">
-                <div className="container-fluid">
+        <header>
+            <nav className="navbar navbar-expand-lg bg-body-white mx-5">
+                <div className="container-fluid px-5">
                     <a className="navbar-brand" href="/">
-                        <img src="/helmet.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top" />
+                        <img src="/img/helmet.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top" />
                         MGL Consulting S.r.l.s.
                     </a>
                     <div class="ms-auto">

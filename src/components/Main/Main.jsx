@@ -1,12 +1,12 @@
 import React from "react";
-import './Main.css'
 import WorkCarousel from "../Carousel/WorkCarousel";
+import './Main.css'
 
 const Main = () => {
     return (
-        <div className="container-fluid home-container">
+        <main>
             <WorkCarousel />
-        </div>
+        </main>
     );
 };
 
