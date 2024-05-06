@@ -1,5 +1,4 @@
-import Home from "./pages/Home";
-import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -7,13 +6,9 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import $ from 'jquery';
 
 function App() {
-
-
   return (
     <>
-      <Header />
       <Home />
-      {/* <h1>hello world</h1> */}
     </>
   )
 }
