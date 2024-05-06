@@ -7,7 +7,7 @@ const Header = () => {
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">
-                        <img src="../../public/helmet.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top" />
+                        <img src="/helmet.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top" />
                         MGL Consulting S.r.l.s.
                     </a>
                     <div class="ms-auto">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import illustration from '../../../public/Illustration.png';  // Assicurati che il percorso sia corretto
+import illustration from '/Illustration.png';  // Assicurati che il percorso sia corretto
 import './WorkCarousel.css';
 
 const WorkCarousel = () => {
