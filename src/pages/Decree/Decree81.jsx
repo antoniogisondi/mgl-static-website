@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import './About.css';
+import './Decree81.css';
 
-const About = () => {
+const Decree81 = () => {
     return (
         <div>
             <Header />
@@ -13,4 +13,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Decree81;
