@@ -6,12 +6,16 @@ const Footer = () => {
         <footer>
             <div className="container">
                 <div className="row">
-                    <div className="col-6 my-5 footer-content">
-                        <img className="logo-footer" src="/img/mgl-consulting-logo.jpeg" alt="" />
-                        <a href="">Facebook</a>
-                        <a href="">Instagram</a>
-                        <a href="">Linkedin</a>
-                        <a href="">Facebook</a>
+                    <div className="col-5">
+                        <div className="col my-5 footer-content d-flex flex-row">
+                            <img className="logo-footer" src="/img/mgl-consulting-logo.png" alt="" />
+                        </div>
+                        <div className="col my-5 footer-content d-flex flex-row">
+                            <a href="">Facebook</a>
+                            <a href="">Instagram</a>
+                            <a href="">Linkedin</a>
+                            <a href="">Facebook</a>
+                        </div>
                     </div>
                     <div className="col-3 my-5 footer-content">
                         <h3>Società</h3>

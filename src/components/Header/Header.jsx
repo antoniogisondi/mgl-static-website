@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
@@ -6,10 +7,10 @@ const Header = () => {
         <header>
             <nav className="navbar navbar-expand-lg bg-body-white mx-5">
                 <div className="container-fluid px-5">
-                    <a className="navbar-brand" href="/">
+                    <Link className="navbar-brand" to="/">
                         <img src="/img/helmet.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top" />
                         MGL Consulting S.r.l.s.
-                    </a>
+                    </Link>
                     <div class="ms-auto">
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
