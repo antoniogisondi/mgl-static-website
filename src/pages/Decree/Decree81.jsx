@@ -7,7 +7,13 @@ const Decree81 = () => {
     return (
         <div>
             <Header />
-
+            <main className='container-fluid'>
+                <div className="row">
+                    <div className="col">
+                        <h3>Qua vanno inseriti la legge del decreto</h3>
+                    </div>
+                </div>
+            </main>
             <Footer />
         </div>
     );
