@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom'
 import image1 from '../../../public/img/architetto.png'
 import image2 from '../../../public/img/elmetti.png'
 import './WorkCarousel.css';
@@ -14,6 +15,7 @@ const WorkCarousel = () => {
         autoplay: true,
         autoplaySpeed: 3000,
         arrows: true,
+        fade: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -42,19 +44,40 @@ const WorkCarousel = () => {
         ]
     };
 
+    const slidesData = [
+        {
+            id: 1,
+            image: image1,
+            title: 'Sicurezza nei Luoghi di Lavoro',
+            description: 'Garantiamo ambienti di lavoro sicuri e conformi alle normative.',
+            cta: 'Scopri di più',
+            link: '/servizi'
+        },
+        {
+            id: 2,
+            image: image2,
+            title: 'Formazione sulla Sicurezza',
+            description: 'Corsi di formazione per migliorare la consapevolezza sulla sicurezza.',
+            cta: 'Iscriviti ora',
+            link: '/formazione'
+        },
+    ]
+
     return (
         <div className="slider-container">
             <Slider {...settings}>
-                <div>
-                    <img src={image1} alt="Slide 1" />
-                    <h2>Slide 1</h2>
-                    <p>Description for Slide 1</p>
-                </div>
-                <div>
-                    <img src={image2} alt="Slide 2" />
-                    <h2>Slide 2</h2>
-                    <p>Description for Slide 2</p>
-                </div>
+                {slidesData.map(slide => (
+                    <div key={slide.id} className="slide">
+                        <div className="image-container">
+                            <img src={slide.image} alt={slide.title} className="slide-image" />
+                        </div>
+                        <div className="overlay">
+                            <h2>{slide.title}</h2>
+                            <p>{slide.description}</p>
+                            <a href={slide.link} className="cta-button">{slide.cta}</a>
+                        </div>
+                    </div>
+                ))}
             </Slider>
         </div>
     );
