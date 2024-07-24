@@ -1,17 +1,29 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import './ContactUs.css';
 
 const ContactUs = () => {
     return (
         <div>
             <Header />
-            <main className='container-fluid'>
-                <div className="row">
-                    <div className="col">
-                        <h3>Qua vanno inseriti i contatti con la form dell'email</h3>
-                    </div>
+            <main>
+                <div className="contact-page">
+                    <h2>Contattaci</h2>
+                    <form>
+                        <label>
+                            Nome:
+                            <input type="text" name="name" />
+                        </label>
+                        <label>
+                            Email:
+                            <input type="email" name="email" />
+                        </label>
+                        <label>
+                            Messaggio:
+                            <textarea name="message"></textarea>
+                        </label>
+                        <button type="submit">Invia</button>
+                    </form>
                 </div>
             </main>
             <Footer />

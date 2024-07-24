@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Stili per le sezioni */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services {
+    background-color: #F1F1F1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.service-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.service-item h3 {
+    color: #0066CC;
+    font-size: 1.2em;
+}
+
+.service-item p {
+    color: #333333;
+}
+
+.about-us {
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    color: #333333;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.about-us img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-preview {
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-preview h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-preview p {
+    color: #333333;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #004c99;
+}
+
+.contact-page {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-page h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page form label {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.contact-page form input,
+.contact-page form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.contact-page form button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page form button:hover {
+    background-color: #004c99;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import WorkCarousel from "../Carousel/WorkCarousel";
+import { Link } from "react-router-dom";
 import './Main.css'
 
 const Main = () => {
@@ -46,21 +47,8 @@ const Main = () => {
 
             <section id="contact" className="contact">
                 <h2>Contattaci</h2>
-                <form>
-                    <label>
-                        Nome:
-                        <input type="text" name="name" />
-                    </label>
-                    <label>
-                        Email:
-                        <input type="email" name="email" />
-                    </label>
-                    <label>
-                        Messaggio:
-                        <textarea name="message"></textarea>
-                    </label>
-                    <button type="submit">Invia</button>
-                </form>
+                <p>Se hai domande o vuoi maggiori informazioni sui nostri servizi, non esitare a contattarci. Siamo qui per aiutarti a garantire la sicurezza nei tuoi luoghi di lavoro.</p>
+                <Link to="/contatti" className="cta-button">Vai alla pagina dei contatti</Link>
             </section>
         </main>
     );
