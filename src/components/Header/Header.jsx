@@ -8,8 +8,7 @@ const Header = () => {
             <nav className="navbar navbar-expand-lg bg-body-white mx-5">
                 <div className="container-fluid px-5">
                     <Link className="navbar-brand" to="/">
-                        <img src="/img/helmet.png" alt="Logo" width="30" height="24" className="d-inline-block align-text-top" />
-                        MGL Consulting S.r.l.s.
+                        <img src="/img/mgl-consulting-logo.png" alt="Logo" className="logo d-inline-block align-text-top" />
                     </Link>
                     <div class="ms-auto">
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
