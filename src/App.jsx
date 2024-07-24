@@ -5,6 +5,8 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Services from "./pages/Services/Services";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css";
 // index.js or App.js
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
