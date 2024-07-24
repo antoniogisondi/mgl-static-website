@@ -6,30 +6,62 @@ const Main = () => {
     return (
         <main>
             <WorkCarousel />
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col">
-                        <h3>Qua vanno inserite delle cose</h3>
-                    </div>
-                    <div className="col">
-                        <h3>Qua vanno inserite delle cose</h3>
-                    </div>
-                    <div className="col">
-                        <h3>Qua vanno inserite delle cose</h3>
-                    </div>
+
+            <section id="services" className="services">
+                <h2>I Nostri Servizi</h2>
+                <div className="service-item">
+                    <img src="icon1.png" alt="Valutazione dei Rischi" />
+                    <h3>Valutazione dei Rischi</h3>
+                    <p>Analisi dettagliata dei rischi presenti nei luoghi di lavoro.</p>
                 </div>
-                <div className="row">
-                    <div className="col">
-                        <h3>Qua vanno inserite delle cose</h3>
-                    </div>
-                    <div className="col">
-                        <h3>Qua vanno inserite delle cose</h3>
-                    </div>
-                    <div className="col">
-                        <h3>Qua vanno inserite delle cose</h3>
-                    </div>
+                <div className="service-item">
+                    <img src="icon2.png" alt="Formazione sulla Sicurezza" />
+                    <h3>Formazione sulla Sicurezza</h3>
+                    <p>Corsi di formazione per lavoratori e datori di lavoro.</p>
                 </div>
-            </div>
+                <div className="service-item">
+                    <img src="icon3.png" alt="Piani di Emergenza" />
+                    <h3>Piani di Emergenza</h3>
+                    <p>Elaborazione di piani di emergenza ed evacuazione.</p>
+                </div>
+            </section>
+
+            <section id="about" className="about-us">
+                <h2>Chi Siamo</h2>
+                <p>MGL Consulting è leader nella consulenza sulla sicurezza e igiene dei posti di lavoro. La nostra missione è garantire ambienti di lavoro sicuri e conformi alle normative.</p>
+                <img src="team-photo.jpg" alt="Il nostro team" />
+            </section>
+
+            <section id="testimonials" className="testimonials">
+                <h2>Cosa Dicono i Nostri Clienti</h2>
+                <div className="testimonial-item">
+                    <p>"MGL Consulting ha trasformato il nostro ambiente di lavoro, rendendolo sicuro e conforme alle normative."</p>
+                    <h4>Mario Rossi, CEO di Azienda S.p.A.</h4>
+                </div>
+                <div className="testimonial-item">
+                    <p>"Grazie alla loro formazione, i nostri dipendenti sono più consapevoli dei rischi e delle misure di sicurezza."</p>
+                    <h4>Anna Bianchi, HR Manager di Industria S.r.l.</h4>
+                </div>
+            </section>
+
+            <section id="contact" className="contact">
+                <h2>Contattaci</h2>
+                <form>
+                    <label>
+                        Nome:
+                        <input type="text" name="name" />
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" />
+                    </label>
+                    <label>
+                        Messaggio:
+                        <textarea name="message"></textarea>
+                    </label>
+                    <button type="submit">Invia</button>
+                </form>
+            </section>
         </main>
     );
 };
