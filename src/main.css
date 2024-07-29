@@ -25,7 +25,15 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 40px;
     gap: 40px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .service-item {
@@ -41,12 +49,28 @@ section {
     margin-top: 0;
 }
 
-.service-item p {
-    margin: 10px 0;
+.service-item:nth-child(1) h3 {
+    color: #ff6347;
+    /* Tomato */
+}
+
+.service-item:nth-child(2) h3 {
+    color: #4682b4;
+    /* Steel Blue */
+}
+
+.service-item:nth-child(3) h3 {
+    color: #32cd32;
+    /* Lime Green */
+}
+
+.service-item:nth-child(4) h3 {
+    color: #ffa500;
+    /* Orange */
 }
 
 .service-item p {
-    color: #333333;
+    margin: 10px 0;
 }
 
 .chi-siamo {
@@ -170,4 +194,75 @@ section {
 
 .contact-page form button:hover {
     background-color: #004c99;
+}
+
+.decreto-81-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.decreto-81-header {
+    background-color: #004080;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.decreto-81-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.decreto-81-header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.decreto-81-intro,
+.decreto-81-details,
+.decreto-81-resources {
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.decreto-81-intro h2,
+.decreto-81-details h2,
+.decreto-81-resources h2 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.decreto-81-intro p,
+.decreto-81-details p,
+.decreto-81-resources p {
+    margin-bottom: 20px;
+}
+
+.decreto-81-details ul,
+.decreto-81-resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.decreto-81-details ul li,
+.decreto-81-resources ul li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.decreto-81-details ul li strong {
+    color: #004080;
+}
+
+.decreto-81-resources ul li a {
+    color: #004080;
+    text-decoration: none;
+}
+
+.decreto-81-resources ul li a:hover {
+    text-decoration: underline;
 }

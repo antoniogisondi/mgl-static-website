@@ -14,7 +14,7 @@ const Main = () => {
         AOS.init({ duration: 2000, easing: 'ease-in-out' });
     }, []);
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -67,7 +67,7 @@ const Main = () => {
             </div>
 
             <section className="services">
-                <div data-aos="fade-up">
+                <div data-aos="fade-up" className=''>
                     <h2>Servizi</h2>
                     <div className="services-list" >
                         {services.map(service => (
