@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom'
-import image1 from '../../../public/img/architetto.png'
-import image2 from '../../../public/img/elmetti.png'
+import image1 from '/img/architetto.png'
+import image2 from '/img/elmetti.png'
 import './WorkCarousel.css';
 
 const WorkCarousel = () => {
