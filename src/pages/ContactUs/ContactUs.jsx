@@ -1,34 +1,42 @@
-import React from 'react';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactUs = () => {
+    const [state, handleSubmit] = useForm('xdkngkjj')
+    if (state.succeeded) {
+        return <p>Grazie</p>
+    }
     return (
-        <div>
-            <Header />
-            <main>
-                <div className="contact-page">
-                    <h2>Contattaci</h2>
-                    <form>
-                        <label>
-                            Nome:
-                            <input type="text" name="name" />
-                        </label>
-                        <label>
-                            Email:
-                            <input type="email" name="email" />
-                        </label>
-                        <label>
-                            Messaggio:
-                            <textarea name="message"></textarea>
-                        </label>
-                        <button type="submit">Invia</button>
-                    </form>
-                </div>
-            </main>
-            <Footer />
-        </div>
+        <form action="https://formspree.io/f/xdkngkjj" method='POST' onSubmit={handleSubmit}>
+            <label htmlFor="email">
+                Email Address
+            </label>
+            <input
+                id="email"
+                type="email"
+                name="email"
+            />
+            <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+            />
+            <textarea
+                id="message"
+                name="message"
+            />
+            <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+            />
+            <button type="submit" disabled={state.submitting}>
+                Submit
+            </button>
+        </form>
     );
-};
+}
 
 export default ContactUs;
+
