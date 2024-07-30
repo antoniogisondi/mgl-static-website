@@ -266,3 +266,105 @@ section {
 .decreto-81-resources ul li a:hover {
     text-decoration: underline;
 }
+
+.contact-form-container {
+    background-color: #f0f0f0;
+    /* Colore di sfondo chiaro per il contenitore della form */
+    padding: 20px;
+    /* Spaziatura interna */
+    border-radius: 8px;
+    /* Angoli arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombra leggera */
+    max-width: 600px;
+    /* Larghezza massima del contenitore */
+    margin: 40px auto;
+    /* Margine superiore e inferiore, centrato orizzontalmente */
+    text-align: left;
+    /* Testo allineato a sinistra */
+    margin-top: 150px;
+    /* Aggiungi questo per lasciare spazio all'header fisso */
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    /* Titolo centrato */
+    color: #004080;
+    /* Colore del testo del titolo */
+}
+
+.contact-form {
+    display: flex;
+    /* Layout flessibile */
+    flex-direction: column;
+    /* Disposizione verticale degli elementi */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    /* Spazio inferiore tra i gruppi di campi */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    /* Spazio inferiore tra l'etichetta e il campo */
+    font-weight: bold;
+    /* Testo in grassetto per l'etichetta */
+    color: #333;
+    /* Colore del testo dell'etichetta */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    /* Larghezza completa del contenitore */
+    padding: 10px;
+    /* Spaziatura interna */
+    border: 1px solid #ccc;
+    /* Bordo grigio chiaro */
+    border-radius: 5px;
+    /* Angoli arrotondati */
+    font-size: 16px;
+    /* Dimensione del testo */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    /* Rimuove il contorno predefinito */
+    border-color: #004080;
+    /* Cambia il colore del bordo quando è attivo */
+}
+
+.submit-button {
+    background-color: #004080;
+    /* Colore di sfondo del bottone */
+    color: #fff;
+    /* Colore del testo del bottone */
+    padding: 10px 20px;
+    /* Spaziatura interna */
+    border: none;
+    /* Rimuove il bordo */
+    border-radius: 5px;
+    /* Angoli arrotondati */
+    font-size: 16px;
+    /* Dimensione del testo */
+    cursor: pointer;
+    /* Cambia il cursore al passaggio del mouse */
+    transition: background-color 0.3s ease;
+    /* Transizione del colore di sfondo */
+}
+
+.submit-button:hover {
+    background-color: #003366;
+    /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+.status-message {
+    margin-top: 15px;
+    /* Spazio superiore */
+    font-size: 14px;
+    /* Dimensione del testo */
+    color: #333;
+    /* Colore del testo */
+}
