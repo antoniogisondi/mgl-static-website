@@ -268,41 +268,32 @@ section {
 }
 
 .contact-form-container {
+    padding-top: 150px;
     background-color: #f0f0f0;
-    /* Colore di sfondo chiaro per il contenitore della form */
-    padding: 20px;
-    /* Spaziatura interna */
+    max-width: 800px;
     border-radius: 8px;
-    /* Angoli arrotondati */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Ombra leggera */
-    max-width: 600px;
-    /* Larghezza massima del contenitore */
-    margin: 40px auto;
-    /* Margine superiore e inferiore, centrato orizzontalmente */
-    text-align: left;
-    /* Testo allineato a sinistra */
-    margin-top: 150px;
-    /* Aggiungi questo per lasciare spazio all'header fisso */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-form-container h2 {
     text-align: center;
-    /* Titolo centrato */
     color: #004080;
-    /* Colore del testo del titolo */
 }
 
 .contact-form {
+    padding: 20px;
+    text-align: left;
     display: flex;
-    /* Layout flessibile */
     flex-direction: column;
-    /* Disposizione verticale degli elementi */
 }
 
 .form-group {
     margin-bottom: 15px;
-    /* Spazio inferiore tra i gruppi di campi */
 }
 
 .form-group label {

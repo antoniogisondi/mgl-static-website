@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MapComponent from '../../components/MapComponent/MapComponent';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import { motion } from 'framer-motion';
@@ -46,8 +47,8 @@ const ContactUs = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <h2>Contattaci</h2>
                 <form className="contact-form" onSubmit={handleSubmit}>
+                    <h2>Contattaci</h2>
                     <div className="form-group">
                         <label htmlFor="name">Nome</label>
                         <input
@@ -84,6 +85,9 @@ const ContactUs = () => {
                     <button type="submit" className="submit-button">Invia</button>
                     {status && <p className="status-message">{status}</p>}
                 </form>
+                <div className='map-container'>
+                    <MapComponent />
+                </div>
             </motion.div>
             <Footer />
         </div>
