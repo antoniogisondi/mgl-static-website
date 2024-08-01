@@ -359,3 +359,24 @@ section {
     color: #333;
     /* Colore del testo */
 }
+
+
+/* Aggiungi eventuali stili personalizzati */
+.margin-header {
+    margin-top: 150px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px;
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+.text-primary {
+    color: #004080 !important;
+}

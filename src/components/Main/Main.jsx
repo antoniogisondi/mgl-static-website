@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Main = () => {
     useEffect(() => {
-        AOS.init({ duration: 2000, easing: 'ease-in-out' });
+        AOS.init({ duration: 1500, easing: 'ease-in-out' });
     }, []);
     const settings = {
         dots: false,
