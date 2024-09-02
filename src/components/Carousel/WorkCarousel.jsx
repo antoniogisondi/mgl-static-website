@@ -1,69 +1,87 @@
 import React, { useState } from 'react';
-import { Carousel } from 'react-bootstrap';
-import illustration from '/img/Illustration.png';  // Assicurati che il percorso sia corretto
+import Slider from 'react-slick';
+import { Link } from 'react-router-dom'
+import image1 from '/img/architetto.png'
+import image2 from '/img/elmetti.png'
 import './WorkCarousel.css';
 
 const WorkCarousel = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-
-    const handleSelect = (selectedIndex) => {
-        setActiveIndex(selectedIndex);
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
+    const slidesData = [
+        {
+            id: 1,
+            image: image1,
+            title: 'Sicurezza nei Luoghi di Lavoro',
+            description: 'Garantiamo ambienti di lavoro sicuri e conformi alle normative.',
+            cta: 'Scopri di più',
+            link: '/servizi'
+        },
+        {
+            id: 2,
+            image: image2,
+            title: 'Formazione sulla Sicurezza',
+            description: 'Corsi di formazione per migliorare la consapevolezza sulla sicurezza.',
+            cta: 'Iscriviti ora',
+            link: '/formazione'
+        },
+    ]
+
     return (
-        <div className="carousel-container">
-            <Carousel
-                id="homeCarousel"
-                className="col-11 mx-auto"
-                activeIndex={activeIndex}
-                onSelect={handleSelect}
-                indicators={false}
-                controls={true}
-            >
-                {/* Primo slide */}
-                <Carousel.Item>
-                    <div className="row align-items-center justify-content-center">
-                        <div className="col-md-5 col-lg-5 text-container">
-                            <h1><span className='important-text'>Da 25 anni </span>aiutiamo il tuo lavoro</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            <button className="btn btn-primary btn-logo">Scopri di più</button>
+        <div className="slider-container">
+            <Slider {...settings}>
+                {slidesData.map(slide => (
+                    <div key={slide.id} className="slide">
+                        <div className="image-container">
+                            <img src={slide.image} alt={slide.title} className="slide-image" />
                         </div>
-                        <div className="col-md-6 col-lg-6 mt-5 illustration-container">
-                            <img src={illustration} alt="Illustrazione che mostra una persona con un laptop" className="img-fluid illustration" />
+                        <div className="overlay">
+                            <h2>{slide.title}</h2>
+                            <p>{slide.description}</p>
+                            <a href={slide.link} className="cta-button">{slide.cta}</a>
                         </div>
                     </div>
-                </Carousel.Item>
-
-                {/* Secondo slide */}
-                <Carousel.Item>
-                    <div className="row align-items-center justify-content-center">
-                        <div className="col-md-5 col-lg-5 text-container">
-                            <h1><span className='important-text'>Slide 2 Title</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <button className="btn btn-primary btn-logo">Learn More</button>
-                        </div>
-                        <div className="col-md-6 col-lg-6 mt-5 illustration-container">
-                            <img src={illustration} alt="Seconda illustrazione" className="img-fluid illustration" />
-                        </div>
-                    </div>
-                </Carousel.Item>
-            </Carousel>
-
-            {/* Indicatori personalizzati */}
-            <div className="carousel-indicators-container">
-                <ul className="carousel-indicators">
-                    <li
-                        onClick={() => handleSelect(0)}
-                        className={activeIndex === 0 ? "active" : ""}
-                    ></li>
-                    <li
-                        onClick={() => handleSelect(1)}
-                        className={activeIndex === 1 ? "active" : ""}
-                    ></li>
-                </ul>
-            </div>
+                ))}
+            </Slider>
         </div>
     );
-};
+}
+
 
 export default WorkCarousel;

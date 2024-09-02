@@ -1,109 +1,74 @@
-/*#region Carousel contents */
-.text-container h1 {
-    font-size: 4.5vw; /* Responsive font size */
-    font-weight: bold;
-}
-
-.text-container p {
-    font-size: 2.5vw; /* Responsive font size */
-}
-
-.important-text {
-    color: #2194f3;
-}
-
-.btn-primary {
-    font-size: 17px !important; 
-    background-color: #2194f3 !important;
-    border: 1px solid #2194f3;
-    padding: 13px 30px !important;
-}
-
-.illustration-container {
+.slider-container {
     position: relative;
-    display: flex;
-    justify-content: flex-end;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.illustration {
-    max-width: 100%;
-    height: auto;
-    width: 80%; /* Adjust the image size */
-    position: relative;
-    left: -5%;
+.slick-dots li button:before {
+    color: #0066cc;
 }
 
-/*#endregion */
-
-/*#region Carousel */
-/************* CAROUSEL SECTION *************/
-
-.carousel-container {
-    min-height: 100vh; /* Ensure full viewport height */
-    padding-top: 40px; /* Reduced top padding */
-    background-color: #f5f7fa;
-}
-.carousel-indicators-container {
-    margin-top: -20px; /* Bring the indicators closer to the carousel */
-    margin-bottom: 20px; /* Extra spacing from the content below */
+.slick-prev:before,
+.slick-next:before {
+    color: #0066cc;
 }
 
-.carousel-indicators {
-    display:flex;
-    list-style: none;
-    padding-top: 130px;
-    margin: 0;
+.slide {
     position: relative;
 }
 
-.carousel-indicators li {
-    width: 12px;
-    height: 12px;
-    margin: 0 5px;
-    background-color: #007bff;
-    border-radius: 50%;
-    cursor: pointer;
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-image {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.overlay h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    transition: background-color 0.3s;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
 }
 
-.carousel-indicators li.active {
-    background-color: #4285f4; /* Adjust the color as needed */
+.cta-button:hover {
+    background-color: #004c99;
 }
-
-/*#endregion */
-
-/************* CAROUSEL SECTION *************/
-
-/*#region Media-queries */
-@media (min-width: 992px) { /* Adjustments for larger screens */
-    .text-container {
-        padding-right: 2vw; /* Reduced padding for text on large screens */
-    }
-    .illustration {
-        width: 70%; /* Adjust the image size */
-        left: -3%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .text-container h1 {
-        font-size: 3.2vw; /* Larger font size for very large screens */
-    }
-    .text-container p {
-        font-size: 1vw; /* Larger font size for paragraph on very large screens */
-    }
-
-    .illustration {
-        width: 60%; /* Further adjust image size */
-        left: -5%;
-    }
-
-    .btn-logo {
-        display: block;
-        font-size: 17px !important; /* Adjust button font size for responsiveness */
-        padding: 13px 30px !important;
-        color: #ffffff; /* Set the text color of the button */
-    }
-}
-/*#endregion */

@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Stili per le sezioni */
+section {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.services {
+    padding: 60px 0px;
+    background-color: #e0f7fa;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    margin-top: 0;
+}
+
+.service-item:nth-child(1) h3 {
+    color: #ff6347;
+    /* Tomato */
+}
+
+.service-item:nth-child(2) h3 {
+    color: #4682b4;
+    /* Steel Blue */
+}
+
+.service-item:nth-child(3) h3 {
+    color: #32cd32;
+    /* Lime Green */
+}
+
+.service-item:nth-child(4) h3 {
+    color: #ffa500;
+    /* Orange */
+}
+
+.service-item p {
+    margin: 10px 0;
+}
+
+.chi-siamo {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+
+.chi-siamo-header {
+    margin-bottom: 40px;
+}
+
+.socio {
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.socio img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.socio h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.socio p {
+    margin: 10px 0;
+}
+
+.slick-prev,
+.slick-next {
+    color: #333;
+}
+
+
+
+
+.contact-preview {
+    background-color: #FFFFFF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-preview h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-preview p {
+    color: #333333;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #004c99;
+}
+
+.contact-page {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-page h2 {
+    color: #003366;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-page form label {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.contact-page form input,
+.contact-page form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.contact-page form button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page form button:hover {
+    background-color: #004c99;
+}
+
+.decreto-81-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.decreto-81-header {
+    background-color: #004080;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.decreto-81-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.decreto-81-header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.decreto-81-intro,
+.decreto-81-details,
+.decreto-81-resources {
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.decreto-81-intro h2,
+.decreto-81-details h2,
+.decreto-81-resources h2 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.decreto-81-intro p,
+.decreto-81-details p,
+.decreto-81-resources p {
+    margin-bottom: 20px;
+}
+
+.decreto-81-details ul,
+.decreto-81-resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+.decreto-81-details ul li,
+.decreto-81-resources ul li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.decreto-81-details ul li strong {
+    color: #004080;
+}
+
+.decreto-81-resources ul li a {
+    color: #004080;
+    text-decoration: none;
+}
+
+.decreto-81-resources ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-form-container {
+    padding-top: 150px;
+    background-color: #f0f0f0;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    color: #004080;
+}
+
+.contact-form {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    /* Spazio inferiore tra l'etichetta e il campo */
+    font-weight: bold;
+    /* Testo in grassetto per l'etichetta */
+    color: #333;
+    /* Colore del testo dell'etichetta */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    /* Larghezza completa del contenitore */
+    padding: 10px;
+    /* Spaziatura interna */
+    border: 1px solid #ccc;
+    /* Bordo grigio chiaro */
+    border-radius: 5px;
+    /* Angoli arrotondati */
+    font-size: 16px;
+    /* Dimensione del testo */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    /* Rimuove il contorno predefinito */
+    border-color: #004080;
+    /* Cambia il colore del bordo quando è attivo */
+}
+
+.submit-button {
+    background-color: #004080;
+    /* Colore di sfondo del bottone */
+    color: #fff;
+    /* Colore del testo del bottone */
+    padding: 10px 20px;
+    /* Spaziatura interna */
+    border: none;
+    /* Rimuove il bordo */
+    border-radius: 5px;
+    /* Angoli arrotondati */
+    font-size: 16px;
+    /* Dimensione del testo */
+    cursor: pointer;
+    /* Cambia il cursore al passaggio del mouse */
+    transition: background-color 0.3s ease;
+    /* Transizione del colore di sfondo */
+}
+
+.submit-button:hover {
+    background-color: #003366;
+    /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+.status-message {
+    margin-top: 15px;
+    /* Spazio superiore */
+    font-size: 14px;
+    /* Dimensione del testo */
+    color: #333;
+    /* Colore del testo */
+}
+
+
+/* Aggiungi eventuali stili personalizzati */
+.margin-header {
+    margin-top: 150px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px;
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+}
+
+.text-primary {
+    color: #004080 !important;
+}
+
+
+/* Stile generale per la pagina dei servizi */
+.servizi-container {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.servizi-titolo {
+    font-size: 2.5rem;
+    color: #343a40;
+}
+
+.servizi-introduzione {
+    font-size: 1.125rem;
+    color: #6c757d;
+}
+
+/* Stile per le card dei servizi */
+.servizi-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servizi-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servizi-card-titolo {
+    font-size: 1.75rem;
+    color: #007bff;
+}
+
+.servizi-lista {
+    padding-left: 1.5rem;
+    color: #495057;
+}
+
+.servizi-lista li {
+    margin-bottom: 0.75rem;
+}
+
+/* Stile per il pulsante */
+.servizi-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.servizi-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition-property: opacity, transform;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
