@@ -380,3 +380,71 @@ section {
 .text-primary {
     color: #004080 !important;
 }
+
+
+/* Stile generale per la pagina dei servizi */
+.servizi-container {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.servizi-titolo {
+    font-size: 2.5rem;
+    color: #343a40;
+}
+
+.servizi-introduzione {
+    font-size: 1.125rem;
+    color: #6c757d;
+}
+
+/* Stile per le card dei servizi */
+.servizi-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servizi-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servizi-card-titolo {
+    font-size: 1.75rem;
+    color: #007bff;
+}
+
+.servizi-lista {
+    padding-left: 1.5rem;
+    color: #495057;
+}
+
+.servizi-lista li {
+    margin-bottom: 0.75rem;
+}
+
+/* Stile per il pulsante */
+.servizi-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.servizi-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition-property: opacity, transform;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
