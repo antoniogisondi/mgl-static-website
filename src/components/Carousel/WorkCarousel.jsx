@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import { Link } from 'react-router-dom'
 import image1 from '/img/architetto.png'
 import image2 from '/img/elmetti.png'
 import './WorkCarousel.css';
@@ -51,7 +50,7 @@ const WorkCarousel = () => {
             title: 'Sicurezza nei Luoghi di Lavoro',
             description: 'Garantiamo ambienti di lavoro sicuri e conformi alle normative.',
             cta: 'Scopri di più',
-            link: '/servizi'
+            link: '/contatti'
         },
         {
             id: 2,
@@ -59,7 +58,7 @@ const WorkCarousel = () => {
             title: 'Formazione sulla Sicurezza',
             description: 'Corsi di formazione per migliorare la consapevolezza sulla sicurezza.',
             cta: 'Iscriviti ora',
-            link: '/formazione'
+            link: '/contatti'
         },
     ]
 

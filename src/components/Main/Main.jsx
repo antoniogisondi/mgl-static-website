@@ -6,7 +6,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import WorkCarousel from "../Carousel/WorkCarousel";
-import imgSocio from '/img/socio-in-affari.jpg'
+import imgTitolare from '/img/titolaredellimpresa.png'
+import imgSocio from '/img/sociodellimpresa.png'
 import { Link } from "react-router-dom";
 
 const Main = () => {
@@ -52,13 +53,13 @@ const Main = () => {
                 </div>
                 <Slider {...settings}>
                     <div className="socio" data-aos="fade-right">
-                        <img src={imgSocio} alt="Socio 1" />
+                        <img src={imgTitolare} alt="Titolare" />
                         <h3>Domenico Gisondi</h3>
                         <p>Amministratore Unico</p>
                         <p>Domenico Gisondi, fondatore e amministratore unico, ha oltre 20 anni di esperienza nel settore della sicurezza sul lavoro.</p>
                     </div>
                     <div className="socio" data-aos="fade-left">
-                        <img src="path-to-image2.jpg" alt="Socio 2" />
+                        <img src={imgSocio} alt="Socio" />
                         <h3>Grazia Matera</h3>
                         <p>Socia</p>
                         <p>Grazia Matera è una socia chiave dell'azienda con una vasta esperienza nella gestione delle risorse umane e nella consulenza aziendale.</p>

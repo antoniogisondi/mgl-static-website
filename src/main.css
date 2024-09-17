@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -84,7 +85,7 @@ section {
 }
 
 .socio {
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -113,6 +114,36 @@ section {
 .slick-next {
     color: #333;
 }
+
+/* Stile per le card dei fondatori e dei soci */
+.founder-card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Immagine della card */
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Titoli */
+.text-primary {
+    color: #007bff;
+}
+
+/* Margine per il contenuto */
+.margin-header {
+    margin-top: 80px;
+}
+
 
 
 
@@ -386,23 +417,31 @@ section {
 .servizi-container {
     max-width: 1200px;
     margin: auto;
-    padding-top: 80px;
 }
 
 .servizi-titolo {
     font-size: 2.5rem;
-    color: #343a40;
+    color: #007bff;
+    /* Colore blu per un tono di sicurezza */
+    font-family: 'Roboto', sans-serif;
+    /* Font più moderno e leggibile */
+    font-weight: bold;
 }
 
 .servizi-introduzione {
-    font-size: 1.125rem;
-    color: #6c757d;
+    font-size: 1.2rem;
+    color: #495057;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Stile per le card dei servizi */
 .servizi-card {
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f8f9fa;
+    /* Sfondo leggero */
+    border-radius: 10px;
+    /* Aggiungi bordi arrotondati */
 }
 
 .servizi-card:hover {
@@ -412,12 +451,16 @@ section {
 
 .servizi-card-titolo {
     font-size: 1.75rem;
-    color: #007bff;
+    color: #e67e22;
+    /* Colore arancione per richiamare attenzione e sicurezza */
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1rem;
 }
 
 .servizi-lista {
     padding-left: 1.5rem;
-    color: #495057;
+    color: #343a40;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .servizi-lista li {
@@ -426,17 +469,37 @@ section {
 
 /* Stile per il pulsante */
 .servizi-btn {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #e67e22;
+    /* Colore arancione */
+    border-color: #e67e22;
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .servizi-btn:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #d35400;
+    /* Colore arancione più scuro */
+    border-color: #d35400;
 }
+
+/* Media queries per migliorare la responsività */
+@media (max-width: 768px) {
+    .servizi-titolo {
+        font-size: 2rem;
+    }
+
+    .servizi-card-titolo {
+        font-size: 1.5rem;
+    }
+
+    .servizi-btn {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
 
 [data-aos="fade-up"] {
     opacity: 0;

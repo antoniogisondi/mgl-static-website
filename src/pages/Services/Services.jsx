@@ -2,17 +2,19 @@ import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import AOS from 'aos';
-import 'aos/dist/aos.css'
+import 'aos/dist/aos.css';
 import { motion } from 'framer-motion';
+import '../../main.css'; // Importa il file CSS personalizzato
 
 const Services = () => {
     React.useEffect(() => {
         AOS.init({ duration: 1000 });
     }, []);
+
     return (
         <div>
             <Header />
-            <main className='container-fluid my-5'>
+            <main className='container-fluid pt-5'>
                 <div className="container my-5 servizi-container">
                     <h1 className="text-center mb-5 servizi-titolo">Servizi di MGL Consulting</h1>
                     <p className="text-center mb-5 servizi-introduzione">
@@ -35,21 +37,6 @@ const Services = () => {
                             </motion.div>
                         </div>
 
-                        <div className="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                            <motion.div whileHover={{ scale: 1.05 }} className="card shadow servizi-card">
-                                <div className="card-body">
-                                    <h2 className="card-title servizi-card-titolo">Consulenza Ambientale ed Energetica</h2>
-                                    <ul className="servizi-lista">
-                                        <li>Audit ambientali e tecnologici</li>
-                                        <li>Consulenza per certificazioni ambientali</li>
-                                        <li>Progettazione e analisi per l'uso di fonti rinnovabili</li>
-                                        <li>Analisi strumentali dei rischi ambientali</li>
-                                        <li>Zonizzazione acustica e monitoraggi ambientali</li>
-                                    </ul>
-                                </div>
-                            </motion.div>
-                        </div>
-
                         <div className="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                             <motion.div whileHover={{ scale: 1.05 }} className="card shadow servizi-card">
                                 <div className="card-body">
@@ -60,21 +47,6 @@ const Services = () => {
                                         <li>Sviluppo e gestione di interventi formativi certificati</li>
                                         <li>Formazione continua e aggiornamento per responsabili aziendali</li>
                                         <li>Organizzazione di corsi di informatica e certificazioni</li>
-                                    </ul>
-                                </div>
-                            </motion.div>
-                        </div>
-
-                        <div className="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                            <motion.div whileHover={{ scale: 1.05 }} className="card shadow servizi-card">
-                                <div className="card-body">
-                                    <h2 className="card-title servizi-card-titolo">Consulenza Imprenditoriale e Direzionale</h2>
-                                    <ul className="servizi-lista">
-                                        <li>Consulenza gestionale e strategica</li>
-                                        <li>Consulenza su start-up e pianificazione aziendale</li>
-                                        <li>Assistenza per il conseguimento di certificazioni di qualità</li>
-                                        <li>Consulenza per fondi comunitari e progetti nazionali</li>
-                                        <li>Gestione tecnico-finanziaria di scambi e investimenti internazionali</li>
                                     </ul>
                                 </div>
                             </motion.div>
