@@ -25,9 +25,13 @@ const ContactUs = () => {
         e.preventDefault();
         setStatus('Invio in corso...');
 
-        const serviceID = import.meta.env.VITE_SERVICE_ID; // Sostituisci con il tuo serviceID di EmailJS
-        const templateID = import.meta.env.VITE_TEMPLATE_ID; // Sostituisci con il tuo templateID di EmailJS
-        const userID = import.meta.env.VITE_USER_ID; // Sostituisci con il tuo userID di EmailJS
+        const serviceID = import.meta.env.VITE_SERVICE_ID;
+        const templateID = import.meta.env.VITE_TEMPLATE_ID;
+        const userID = import.meta.env.VITE_USER_ID;
+
+        console.log('Service ID:', serviceID); // Dovrebbe stampare il tuo serviceID
+        console.log('Template ID:', templateID); // Dovrebbe stampare il tuo templateID
+        console.log('User ID:', userID); // Dovrebbe stampare il tuo userID
 
         emailjs.send(serviceID, templateID, formData, userID)
             .then((response) => {
