@@ -117,10 +117,19 @@ section {
 
 /* Stile per le card dei fondatori e dei soci */
 .founder-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder-img {
+    width: 55%;
+    border-radius: 49%;
 }
 
 .founder-card:hover {
@@ -128,7 +137,6 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Immagine della card */
 .card-img-top {
     height: 250px;
     object-fit: cover;

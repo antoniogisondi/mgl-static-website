@@ -37,11 +37,11 @@ const AboutUs = () => {
                         <div className="row d-flex justify-content-center">
                             <div className="col-md-6 mb-4">
                                 <motion.div
-                                    className="card h-100 founder-card"
+                                    className="founder-card"
                                     onHoverStart={() => setHoveredCard(1)}
                                     onHoverEnd={() => setHoveredCard(null)}
                                 >
-                                    <img src={imgTitolare} className="card-img-top" alt="Fondatore" />
+                                    <img src={imgTitolare} className="founder-img" alt="Fondatore" />
                                     <div className="card-body text-center">
                                         <h3 className="card-title">Gisondi Domenico</h3>
                                         <p className="card-text">
