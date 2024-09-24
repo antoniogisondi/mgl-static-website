@@ -511,3 +511,90 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+/* Stile generale per la sezione delle esperienze */
+.experience-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #007bff;
+    /* Colore blu per richiamare l'identità aziendale */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.experience-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Stile per i titoli delle sezioni */
+.text-secondary {
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Stile per la lista delle competenze */
+.competence-list {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.competence-list li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Stile per la descrizione dei clienti */
+.clients-description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Stile per la lista dei clienti */
+.clients-list {
+    list-style-type: none;
+    padding-left: 0;
+    columns: 2;
+    /* Divide la lista in due colonne per schermi larghi */
+    column-gap: 30px;
+}
+
+.clients-list li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Responsività per schermi più piccoli */
+@media (max-width: 768px) {
+    .experience-title {
+        font-size: 1.8rem;
+    }
+
+    .competence-list,
+    .clients-list {
+        columns: 1;
+        /* Ripristina una singola colonna per schermi piccoli */
+    }
+
+    .experience-section {
+        padding: 20px;
+    }
+}
