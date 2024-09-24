@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import '../../main.css'; // Importa il CSS personalizzato
 import imgTitolare from '/img/titolaredellimpresa.png'
 import imgSocio from '/img/sociodellimpresa.png'
+import imgSocio2 from '/img/sociodellimpresa2.jpg'
 
 const AboutUs = () => {
     // Stato per la gestione dell'hover sulle card
@@ -43,7 +44,9 @@ const AboutUs = () => {
                                     <img src={imgTitolare} className="card-img-top" alt="Fondatore" />
                                     <div className="card-body text-center">
                                         <h3 className="card-title">Gisondi Domenico</h3>
-                                        <p className="card-text">Esperienza e background del fondatore...</p>
+                                        <p className="card-text">
+                                            Responsabile del processo economico amministrativo presso MGL Consulting.
+                                        </p>
                                         {hoveredCard === 1 && (
                                             <motion.div
                                                 className="founder-details"
@@ -51,8 +54,10 @@ const AboutUs = () => {
                                                 animate={{ opacity: 1 }}
                                                 transition={{ duration: 0.3 }}
                                             >
-                                                <p>Dettagli aggiuntivi sul fondatore...</p>
-                                                <p>Esperienze specifiche, competenze, ecc.</p>
+                                                <p><strong>Incarichi:</strong></p>
+                                                <p>Responsabile del processo economico amministrativo.</p>
+                                                <p>Esperienze specifiche, competenze amministrative, gestione delle finanze aziendali.</p>
+                                                <p>Ha supervisionato vari progetti di ottimizzazione dei processi economici.</p>
                                             </motion.div>
                                         )}
                                     </div>
@@ -80,7 +85,9 @@ const AboutUs = () => {
                                     <img src={imgSocio} className="card-img-top" alt="Socio 1" />
                                     <div className="card-body text-center">
                                         <h3 className="card-title">Matera Grazia</h3>
-                                        <p className="card-text">Esperienza e background del socio 1...</p>
+                                        <p className="card-text">
+                                            Responsabile del processo di direzione e del processo di erogazione dei servizi formativi presso MGL Consulting.
+                                        </p>
                                         {hoveredCard === 2 && (
                                             <motion.div
                                                 className="founder-details"
@@ -88,13 +95,16 @@ const AboutUs = () => {
                                                 animate={{ opacity: 1 }}
                                                 transition={{ duration: 0.3 }}
                                             >
-                                                <p>Dettagli aggiuntivi sul socio 1...</p>
+                                                <p><strong>Incarichi:</strong></p>
+                                                <p>Responsabile del processo di direzione.</p>
+                                                <p>Responsabile del processo di erogazione dei servizi formativi.</p>
                                                 <p>Esperienze specifiche, competenze, ecc.</p>
                                             </motion.div>
                                         )}
                                     </div>
                                 </motion.div>
                             </div>
+
 
                             {/* Card Socio 2 */}
                             <div className="col-md-4 mb-4">
@@ -103,10 +113,12 @@ const AboutUs = () => {
                                     onHoverStart={() => setHoveredCard(3)}
                                     onHoverEnd={() => setHoveredCard(null)}
                                 >
-                                    <img src="socio2.jpg" className="card-img-top" alt="Socio 2" />
+                                    <img src={imgSocio2} className="card-img-top" alt="Socio 2" />
                                     <div className="card-body text-center">
-                                        <h3 className="card-title">Nome Socio 2</h3>
-                                        <p className="card-text">Esperienza e background del socio 2...</p>
+                                        <h3 className="card-title">Matera Lucia</h3>
+                                        <p className="card-text">
+                                            Responsabile della formazione e dei processi formativi presso MGL Consulting.
+                                        </p>
                                         {hoveredCard === 3 && (
                                             <motion.div
                                                 className="founder-details"
@@ -114,13 +126,16 @@ const AboutUs = () => {
                                                 animate={{ opacity: 1 }}
                                                 transition={{ duration: 0.3 }}
                                             >
-                                                <p>Dettagli aggiuntivi sul socio 2...</p>
-                                                <p>Esperienze specifiche, competenze, ecc.</p>
+                                                <p><strong>Incarichi:</strong></p>
+                                                <p>Responsabile del processo di analisi dei fabbisogni formativi.</p>
+                                                <p>Responsabile del processo di progettazione dei servizi formativi.</p>
+                                                <p>Dettagli aggiuntivi sul socio 2, esperienze e competenze specifiche nella gestione dei processi formativi.</p>
                                             </motion.div>
                                         )}
                                     </div>
                                 </motion.div>
                             </div>
+
 
                             {/* Aggiungi altre card di soci se necessario */}
                         </div>

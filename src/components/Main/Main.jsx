@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import WorkCarousel from "../Carousel/WorkCarousel";
 import imgTitolare from '/img/titolaredellimpresa.png'
 import imgSocio from '/img/sociodellimpresa.png'
+import imgSocio2 from '/img/sociodellimpresa2.jpg'
 import { Link } from "react-router-dom";
 
 const Main = () => {
@@ -61,6 +62,12 @@ const Main = () => {
                     <div className="socio" data-aos="fade-left">
                         <img src={imgSocio} alt="Socio" />
                         <h3>Grazia Matera</h3>
+                        <p>Socia</p>
+                        <p>Grazia Matera è una socia chiave dell'azienda con una vasta esperienza nella gestione delle risorse umane e nella consulenza aziendale.</p>
+                    </div>
+                    <div className="socio" data-aos="fade-left">
+                        <img src={imgSocio2} alt="Socio" />
+                        <h3>Lucia Matera</h3>
                         <p>Socia</p>
                         <p>Grazia Matera è una socia chiave dell'azienda con una vasta esperienza nella gestione delle risorse umane e nella consulenza aziendale.</p>
                     </div>
