@@ -7,7 +7,7 @@ import '../../main.css'
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="container">
+            <div className="container pt-0">
                 <div className="row">
                     <div className="col-md-5 col-12 d-flex flex-column align-items-start my-5">
                         <div className="footer-logo mb-4">

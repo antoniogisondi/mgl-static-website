@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import '../../main.css'
 import './Header.css'
+import '../../main.css'
 
 const Header = () => {
     return (

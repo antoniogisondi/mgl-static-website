@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import { motion } from 'framer-motion';
-import '../../main.css'; // Importa il CSS personalizzato
+// import '../../main.css'; // Importa il CSS personalizzato
 import imgTitolare from '/img/titolaredellimpresa.png'
 import imgSocio from '/img/sociodellimpresa.png'
 import imgSocio2 from '/img/sociodellimpresa2.jpg'
+import './AboutUs.css'
 
 const AboutUs = () => {
     // Stato per la gestione dell'hover sulle card

@@ -1,3 +1,7 @@
+main {
+    padding-top: 100px;
+}
+
 /* Sezione generale */
 .chi-siamo {
     padding: 60px 20px;
@@ -232,6 +236,10 @@
 
 /* Responsività per tablet */
 @media (max-width: 992px) {
+    main {
+        padding-top: 90px;
+    }
+
     .services-list {
         grid-template-columns: repeat(2, 1fr);
         /* 2 colonne su tablet */
@@ -244,6 +252,10 @@
 
 /* Responsive - Mobile */
 @media (max-width: 768px) {
+    main {
+        padding-top: 90px;
+    }
+
     .chi-siamo-header h2 {
         font-size: 2rem;
     }
