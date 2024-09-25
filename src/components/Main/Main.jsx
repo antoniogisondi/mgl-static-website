@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
-import AOS from 'aos';
+import { Link } from "react-router-dom";
+import WorkCarousel from "../Carousel/WorkCarousel";
 import { motion } from 'framer-motion';
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import WorkCarousel from "../Carousel/WorkCarousel";
 import imgTitolare from '/img/titolaredellimpresa.png'
 import imgSocio from '/img/sociodellimpresa.png'
 import imgSocio2 from '/img/sociodellimpresa2.jpg'
-import { Link } from "react-router-dom";
 import './Main.css'
 import '../../main.css'
 
