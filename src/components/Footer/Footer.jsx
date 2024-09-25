@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './Footer.css'
+import '../../main.css'
 import logo from '/img/mgl-consulting-logo.png'
 
 const Footer = () => {

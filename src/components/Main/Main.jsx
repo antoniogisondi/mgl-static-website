@@ -10,6 +10,8 @@ import imgTitolare from '/img/titolaredellimpresa.png'
 import imgSocio from '/img/sociodellimpresa.png'
 import imgSocio2 from '/img/sociodellimpresa2.jpg'
 import { Link } from "react-router-dom";
+import './Main.css'
+import '../../main.css'
 
 const Main = () => {
     useEffect(() => {

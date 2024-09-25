@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import image1 from '/img/architetto.png'
 import image2 from '/img/elmetti.png'
+import '../../main.css'
 import './WorkCarousel.css';
 
 const WorkCarousel = () => {

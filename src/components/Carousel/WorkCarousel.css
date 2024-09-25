@@ -1,7 +1,6 @@
 .slider-container {
     position: relative;
     width: 100%;
-    /* max-width: 1200px; */
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -71,4 +70,39 @@
 
 .cta-button:hover {
     background-color: #004c99;
+}
+
+/* Responsività per schermi più piccoli */
+@media (max-width: 768px) {
+    .overlay h2 {
+        font-size: 1.8rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    .slide {
+        height: 350px;
+        /* Riduce l'altezza del carosello su schermi piccoli */
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay h2 {
+        font-size: 1.5rem;
+    }
+
+    .overlay p {
+        font-size: 0.9rem;
+    }
+
+    .slide {
+        height: 300px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 }
