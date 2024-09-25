@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height: 100px;
     z-index: 1000;
 }
 
@@ -48,6 +49,10 @@
 
 /* Responsività per i dispositivi mobili */
 @media (max-width: 992px) {
+    .custom-header {
+        height: 90px;
+    }
+
     .nav-custom-container {
         text-align: center;
     }
