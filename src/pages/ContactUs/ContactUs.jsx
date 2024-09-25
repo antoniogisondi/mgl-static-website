@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com'
 import MapComponent from '../../components/MapComponent/MapComponent';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import { motion } from 'framer-motion';
-import emailjs from 'emailjs-com'
+import './ContactUs.css'
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -43,7 +44,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div>
+        <>
             <Header />
             <motion.div
                 className="contact-form-container"
@@ -94,7 +95,7 @@ const ContactUs = () => {
                 </div>
             </motion.div>
             <Footer />
-        </div>
+        </>
     )
 }
 

@@ -1,0 +1,114 @@
+/* Container principale della pagina servizi */
+.servizi-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Titolo della sezione servizi */
+.servizi-titolo {
+    font-size: 2.5rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Introduzione ai servizi */
+.servizi-introduzione {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Card dei servizi */
+.servizi-card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.servizi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titolo delle card */
+.servizi-card-titolo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Lista dei servizi all'interno delle card */
+.servizi-lista {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.servizi-lista li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Stile per il pulsante di contatto */
+.servizi-btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.servizi-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Layout per le card dei servizi */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    flex: 1 1 calc(50% - 20px);
+    /* Due card per riga */
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 1 1 100%;
+        /* Una card per riga su schermi più piccoli */
+    }
+
+    .servizi-container {
+        padding: 10px;
+    }
+
+    .servizi-titolo {
+        font-size: 2rem;
+    }
+
+    .servizi-introduzione {
+        font-size: 1.1rem;
+    }
+
+    .servizi-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

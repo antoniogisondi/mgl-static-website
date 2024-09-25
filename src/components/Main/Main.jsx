@@ -35,7 +35,7 @@ const Main = () => {
     const ServiceItem = ({ title, description }) => (
         <motion.div
             className="service-item"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.95 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

@@ -1,10 +1,10 @@
 import React from 'react';
+import AOS from 'aos';
+import { motion } from 'framer-motion';
+import 'aos/dist/aos.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { motion } from 'framer-motion';
-import '../../main.css'; // Importa il file CSS personalizzato
+import './Services.css'
 
 const Services = () => {
     React.useEffect(() => {
@@ -22,7 +22,7 @@ const Services = () => {
                         assicurando la conformità alle normative vigenti e promuovendo un ambiente lavorativo sicuro e sostenibile.
                     </p>
                     <div className="row">
-                        <div className="col-md-6 mb-4" data-aos="fade-up">
+                        <div className="col-md-5 mb-4" data-aos="fade-up">
                             <motion.div whileHover={{ scale: 1.05 }} className="card shadow servizi-card">
                                 <div className="card-body">
                                     <h2 className="card-title servizi-card-titolo">Consulenza sulla Sicurezza nei Luoghi di Lavoro</h2>
@@ -37,7 +37,7 @@ const Services = () => {
                             </motion.div>
                         </div>
 
-                        <div className="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div className="col-md-5 mb-4" data-aos="fade-up" data-aos-delay="200">
                             <motion.div whileHover={{ scale: 1.05 }} className="card shadow servizi-card">
                                 <div className="card-body">
                                     <h2 className="card-title servizi-card-titolo">Formazione e Aggiornamento Professionale</h2>
