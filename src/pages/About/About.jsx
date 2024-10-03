@@ -149,7 +149,7 @@ const AboutUs = () => {
                         <h2 className="text-primary experience-title">Le Nostre Esperienze</h2>
                         <p className="experience-description">
                             Ci occupiamo di organizzare ed erogare corsi di formazione per RSPP datori di lavoro
-                            (Accordo Stato-Regioni 21/12/2011), RSPP Esterno (Accordo Stato-Regioni del 26/01/2006),
+                            (Accordo Stato-Regioni 21/12/2011), RSPP Esterno (Accordo Stato-Regioni del 07/07/2016),
                             Formazione per addetti antincendio, dirigenti, rappresentanti per la sicurezza, e molti altri.
                             Le nostre competenze includono la progettazione di azioni corsuali personalizzate e la gestione
                             della qualità inerente ai processi formativi.
@@ -157,8 +157,7 @@ const AboutUs = () => {
 
                         <h3 className="text-secondary">Competenze Sviluppate</h3>
                         <ul className="competence-list">
-                            <li>Progettazione di massima di un’azione corsuale;</li>
-                            <li>Progettazione di dettaglio di un’azione corsuale;</li>
+                            <li>Progettazione di attività di formazione in ambito sicurezza lavoro;</li>
                             <li>Progettazione di un intervento individualizzato;</li>
                             <li>Gestione della qualità inerente il processo.</li>
                         </ul>
@@ -166,19 +165,23 @@ const AboutUs = () => {
                         <h3 className="text-secondary">I Nostri Clienti</h3>
                         <p className="clients-description">Ci siamo occupati di quanto descritto sopra per le seguenti aziende ed enti:</p>
                         <ul className="clients-list">
-                            <li>Amazon</li>
-                            <li>CNH Industrial</li>
-                            <li>IVECO</li>
-                            <li>Cnos-fap Centro Nazionale Opere Salesiane</li>
-                            <li>Stellantis Z. I. San Nicola di Melfi</li>
-                            <li>Marelli Z. I. San Nicola di Melfi (PZ)</li>
                             <li>Tiberina San Nicola di Melfi (PZ)</li>
                             <li>ISCOT ITALIA S.p.a.</li>
                             <li>ISMAN</li>
                             <li>Edison Next Melfi spa</li>
                             <li>Travesud srl</li>
-                            <li>Amministrazione comunale di Lavello Provincia di Potenza</li>
-                            <li>... {/* Aggiungi altri clienti qui */}</li>
+                            <li>Sinergie</li>
+                            <li>Pintotecno S.r.l.</li>
+                            <li>Vistech S.r.l.</li>
+                            <li>Sabemi S.r.l.</li>
+                            <li>EUROMIT di Perella M.</li>
+                            <li>ITA Sistemi</li>
+                            <li>Tecno Costruzioni S.r.l.</li>
+                            <li>S.R. Verniciature S.r.l.</li>
+                            <li>Il Cantiniere S.r.l.</li>
+                            <li>SG S.p.a.</li>
+                            <li>Eugea Mediterranea S.p.a.</li>
+                            <li>Preziosi Food S.p.a.</li>
                         </ul>
                     </motion.div>
                 </section>

@@ -52,7 +52,9 @@ const Main = () => {
             <div className="chi-siamo">
                 <div className="chi-siamo-header" data-aos="fade-up">
                     <h2>Chi Siamo</h2>
-                    <p>La nostra azienda, MGL Consulting, è leader nella consulenza sulla sicurezza nei luoghi di lavoro. Fondata nel 2016, la nostra missione è garantire la massima sicurezza per tutti i lavoratori attraverso soluzioni innovative e personalizzate. Con anni di esperienza nel settore, ci impegniamo a fornire servizi di alta qualità per proteggere la tua azienda e i tuoi dipendenti.</p>
+                    <p>La nostra azienda, MGL Consulting, è leader nella consulenza sulla sicurezza nei luoghi di lavoro. Fondata nel 2016, la nostra missione è garantire la massima sicurezza per tutti i lavoratori attraverso soluzioni innovative e personalizzate. Con anni di esperienza nel settore, ci impegniamo a fornire servizi di alta qualità per proteggere la tua azienda e i tuoi dipendenti.
+                        La nostra proposta riguarda la progettazione, organizzazione ed erogazione di corsi di formazione strutturati tenendo conto delle peculiarità dell’azienda e in funzione delle specificità della cultura prevenzionale e della realtà aziendale.
+                    </p>
                 </div>
                 <Slider {...settings}>
                     <div className="socio" data-aos="fade-right">
@@ -71,7 +73,7 @@ const Main = () => {
                         <img src={imgSocio2} alt="Socio" />
                         <h3>Lucia Matera</h3>
                         <p>Socia</p>
-                        <p>Grazia Matera è una socia chiave dell'azienda con una vasta esperienza nella gestione delle risorse umane e nella consulenza aziendale.</p>
+                        <p>Lucia Matera è una socia chiave dell'azienda con una vasta esperienza nella gestione delle risorse umane e nella consulenza aziendale.</p>
                     </div>
                 </Slider>
             </div>
