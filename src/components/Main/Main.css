@@ -151,6 +151,10 @@ main {
     color: #32cd32;
     /* Lime Green */
 }
+.service-item:nth-child(4) h3 {
+    color: #2115ab;
+    /* Lime Green */
+}
 
 .service-item p {
     font-size: 1rem;

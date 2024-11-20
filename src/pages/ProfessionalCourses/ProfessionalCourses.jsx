@@ -1,0 +1,92 @@
+import React, { useState } from 'react';
+import './ProfessionalCourses.css';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import coursesData from '../../data/courses'; // Importa i dati dei corsi
+
+const ProfessionalCourses = () => {
+  const [selectedCategory, setSelectedCategory] = useState('Tutti');
+
+  // Filtrare i corsi in base alla categoria selezionata
+  const filteredCourses = selectedCategory === 'Tutti'
+    ? coursesData
+    : coursesData.filter(course => course.category === selectedCategory);
+
+  return (
+    <>
+      <Header />
+      <main className="professional-courses-page">
+        <div className="container text-center my-5">
+          <h1 className="mb-4">Corsi Professionalizzanti Accreditati</h1>
+          <p className="lead">
+            Scopri i corsi accreditati dalla Regione Basilicata per migliorare le tue competenze e favorire l'inserimento nel mondo del lavoro.
+          </p>
+        </div>
+
+        {/* Filtri per categoria */}
+        <div className="container my-3 text-center">
+          <h2 className="mb-4">Filtra per Categoria</h2>
+          <div className="btn-group">
+            <button
+              className={`btn ${selectedCategory === 'Tutti' ? 'btn-primary' : 'btn-outline-primary'}`}
+              onClick={() => setSelectedCategory('Tutti')}
+            >
+              Tutti
+            </button>
+            <button
+              className={`btn ${selectedCategory === 'Ambiente' ? 'btn-primary' : 'btn-outline-primary'}`}
+              onClick={() => setSelectedCategory('Ambiente')}
+            >
+              Ambiente
+            </button>
+            <button
+              className={`btn ${selectedCategory === 'Amministrazione' ? 'btn-primary' : 'btn-outline-primary'}`}
+              onClick={() => setSelectedCategory('Amministrazione')}
+            >
+              Amministrazione
+            </button>
+            <button
+              className={`btn ${selectedCategory === 'Sanità' ? 'btn-primary' : 'btn-outline-primary'}`}
+              onClick={() => setSelectedCategory('Sanità')}
+            >
+              Sanità
+            </button>
+            <button
+              className={`btn ${selectedCategory === 'Logistica' ? 'btn-primary' : 'btn-outline-primary'}`}
+              onClick={() => setSelectedCategory('Logistica')}
+            >
+              Logistica
+            </button>
+            <button
+              className={`btn ${selectedCategory === 'Ristorazione' ? 'btn-primary' : 'btn-outline-primary'}`}
+              onClick={() => setSelectedCategory('Ristorazione')}
+            >
+              Ristorazione
+            </button>
+          </div>
+        </div>
+
+        {/* Elenco dei corsi */}
+        <div className="container my-5">
+          <div className="row gy-4"> {/* Bootstrap `gy-4` per ridurre il gap */}
+            {filteredCourses.map((course, index) => (
+              <div className="col-md-6 col-lg-3" key={index}>
+                <div className="card custom-card">
+                  <div className="card-body">
+                    <h5 className="card-title">{course.title}</h5>
+                    <p className="card-text">{course.description}</p>
+                    <p><strong>Durata:</strong> {course.duration}</p>
+                    <a href={course.link} className="btn btn-primary custom-btn">Scopri di più</a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+};
+
+export default ProfessionalCourses;

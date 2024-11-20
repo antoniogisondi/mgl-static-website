@@ -69,7 +69,7 @@ const WorkCarousel = () => {
                 {slidesData.map(slide => (
                     <div key={slide.id} className="slide">
                         <div className="image-container">
-                            <img src={slide.image} alt={slide.title} className="slide-image" />
+                            <img src={slide.image} alt='#' className="slide-image" />
                         </div>
                         <div className="overlay">
                             <h2>{slide.title}</h2>

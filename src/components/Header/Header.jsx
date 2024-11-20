@@ -18,13 +18,16 @@ const Header = () => {
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul className="navbar-nav">
                                 <li className="nav-item nav-custom-item">
-                                    <Link className="nav-link nav-custom-link active" aria-current="page" to="/decreto">D.Lgs 81</Link>
+                                    <Link className="nav-link nav-custom-link" to="/corsi-professionalizzanti">Corsi Professionalizzanti</Link>
                                 </li>
                                 <li className="nav-item nav-custom-item">
-                                    <Link className="nav-link nav-custom-link" to="/chi-siamo">Chi siamo</Link>
+                                    <Link className="nav-link nav-custom-link" to="/corsi-sicurezza">Corsi Sicurezza</Link>
                                 </li>
                                 <li className="nav-item nav-custom-item">
                                     <Link className="nav-link nav-custom-link" to="/servizi">Servizi</Link>
+                                </li>
+                                <li className="nav-item nav-custom-item">
+                                    <Link className="nav-link nav-custom-link" to="/chi-siamo">Chi siamo</Link>
                                 </li>
                                 <li className="nav-item nav-custom-item">
                                     <Link className="nav-link nav-custom-link" to="/contatti">Contatti</Link>
