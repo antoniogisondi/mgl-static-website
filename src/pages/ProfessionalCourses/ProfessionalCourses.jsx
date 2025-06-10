@@ -1,17 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './ProfessionalCourses.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import { getProfessionalCourses } from '../../service/apiCourses';
 import coursesData from '../../data/courses'; // Importa i dati dei corsi
 
 const ProfessionalCourses = () => {
-  const [selectedCategory, setSelectedCategory] = useState('Tutti');
+  const [courses, setCourses] = useState([])
+  // const [selectedCategory, setSelectedCategory] = useState('Tutti');
 
   // Filtrare i corsi in base alla categoria selezionata
-  const filteredCourses = selectedCategory === 'Tutti'
-    ? coursesData
-    : coursesData.filter(course => course.category === selectedCategory);
+  // const filteredCourses = selectedCategory === 'Tutti'
+  //   ? coursesData
+  //   : coursesData.filter(course => course.category === selectedCategory);
 
+    useEffect(() => {
+      getProfessionalCourses().then(setCourses).catch((err) => console.error('Errore fetch:', err))
+    }, [])
   return (
     <>
       <Header />
@@ -24,7 +29,7 @@ const ProfessionalCourses = () => {
         </div>
 
         {/* Filtri per categoria */}
-        <div className="container my-3 text-center">
+        {/* <div className="container my-3 text-center">
           <h2 className="mb-4">Filtra per Categoria</h2>
           <div className="btn-group">
             <button
@@ -64,13 +69,13 @@ const ProfessionalCourses = () => {
               Ristorazione
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* Elenco dei corsi */}
         <div className="container my-5">
           <div className="row gy-4"> {/* Bootstrap `gy-4` per ridurre il gap */}
-            {filteredCourses.map((course, index) => (
-              <div className="col-md-6 col-lg-3" key={index}>
+            {courses.map((course) => (
+              <div className="col-md-6 col-lg-3" key={course._id}>
                 <div className="card custom-card">
                   <div className="card-body">
                     <h5 className="card-title">{course.title}</h5>

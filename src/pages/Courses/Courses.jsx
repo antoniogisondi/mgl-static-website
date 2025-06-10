@@ -13,8 +13,8 @@ function Courses() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {courses.map((corso) => (
                 <div key={corso._id} className="border rounded p-4 shadow hover:shadow-lg">
+                    <img src={`${import.meta.env.VITE_API_URL}${corso.image}`} alt="" />
                 <h2 className="text-xl font-semibold">{corso.title}</h2>
-                <p>{corso.description?.slice(0, 100)}...</p>
                 <p className="mt-2 font-bold">{corso.price} €</p>
                 </div>
             ))}

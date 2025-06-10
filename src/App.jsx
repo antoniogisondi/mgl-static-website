@@ -5,6 +5,7 @@ import Services from "./pages/Services/Services";
 import ProfessionalCourses from './pages/ProfessionalCourses/ProfessionalCourses'
 import SafetyCourses from './pages/SafetyCourses/SafetyCourses'
 import Courses from "./pages/Courses/Courses";
+import DetailsCourses from "./pages/DetailsCourses/DetailsCourses";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "slick-carousel/slick/slick.css"
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contatti" element={<ContactUs />} />
           <Route path="/corsi-professionalizzanti" element={<ProfessionalCourses />} />
           <Route path="/corsi-sicurezza" element={<SafetyCourses />} />
+          <Route path="/corsi-sicurezza/:id" element={<DetailsCourses/>} />
           <Route path="/corsi" element={<Courses/>} />
         </Routes>
       </Router>
