@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import { getProfessionalCourses } from '../../service/apiCourses';
 import coursesData from '../../data/courses'; // Importa i dati dei corsi
+import { Link } from 'react-router-dom';
 
 const ProfessionalCourses = () => {
   const [courses, setCourses] = useState([])
@@ -81,7 +82,7 @@ const ProfessionalCourses = () => {
                     <h5 className="card-title">{course.title}</h5>
                     <p className="card-text">{course.description}</p>
                     <p><strong>Durata:</strong> {course.duration}</p>
-                    <a href={course.link} className="btn btn-primary custom-btn">Scopri di più</a>
+                    <Link to={`/corsi-professionalizzanti/${course._id}`} className="btn btn-primary custom-btn">Scopri di più</Link>
                   </div>
                 </div>
               </div>
