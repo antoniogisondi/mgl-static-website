@@ -52,6 +52,20 @@ function DetailsProfessionalCourses() {
             <h2>{corso.subtitle}</h2>
             <p>{corso.description}</p>
             {/* e così via... */}
+            <a
+            href={`https://wa.me/${import.meta.env.VITE_PHONE_NUMBER}?text=Salve, vorrei informazioni sul corso "${corso.title}"`}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            Contattaci su WhatsApp
+            </a>
+
+            <a
+            href={`mailto:${import.meta.env.VITE_EMAIL}?subject=Info corso ${corso.title}`}
+            className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mt-2 ml-2"
+            >
+            Scrivici via Email
+            </a>
 
             <form onSubmit={handleSubmit} className="space-y-4 mt-8 bg-gray-100 p-4 rounded">
                 <h3 className="text-xl font-bold">Richiedi informazioni</h3>
@@ -96,6 +110,7 @@ function DetailsProfessionalCourses() {
 
                 {msg && <p className="text-sm mt-2">{msg}</p>}
             </form>
+
         </div>
     )
 }
