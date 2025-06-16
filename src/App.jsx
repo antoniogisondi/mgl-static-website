@@ -6,6 +6,8 @@ import ProfessionalCourses from './pages/ProfessionalCourses/ProfessionalCourses
 import SafetyCourses from './pages/SafetyCourses/SafetyCourses'
 import DetailsCourses from "./pages/DetailsCourses/DetailsCourses";
 import DetailsProfessionalCourses from "./pages/DetailsProfessionalCourses/DetailsProfessionalCourses";
+import EipassCourses from "./pages/EipassCourses/EipassCourses";
+import EipassDetailsPage from "./pages/EipassDetailsPage/EipassDetailsPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "slick-carousel/slick/slick.css"
@@ -25,6 +27,8 @@ function App() {
           <Route path="/corsi-professionalizzanti/:id" element={<DetailsProfessionalCourses />} />
           <Route path="/corsi-sicurezza" element={<SafetyCourses />} />
           <Route path="/corsi-sicurezza/:id" element={<DetailsCourses/>} />
+          <Route path="/eipass" element={<EipassCourses/>} />
+          <Route path="/eipass/:slug" element={<EipassDetailsPage/>} />
         </Routes>
       </Router>
     </>

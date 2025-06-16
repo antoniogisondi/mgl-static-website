@@ -1,69 +1,96 @@
 // coursesData.js
 
-const coursesData = [
+// src/data/eipassCourses.js
+const eipassCourses = [
     {
-    title: "Tecnico per la Gestione e la Manutenzione di Giardini e Parchi Storici",
-    description: "Formazione per la gestione e manutenzione di aree verdi storiche.",
-    duration: "150 ore",
-    category: "Ambiente",
-    link: "/corsi/giardini-parchi-storici"
+        title: "EIPASS 7 Moduli User",
+        slug: 'eipass-7-moduli-user',
+        description:
+            "Certificazione informatica riconosciuta per concorsi, graduatorie e CV. Include 7 moduli: IT Fundamentals, Web Browsing, Web Collaboration, IT Security, Word, Excel, Presentation.",
+        image: "/images/eipass/7moduli.jpg",
+        price: "da €138",
+        modality: "Online",
+        duration: "200 ore",
+        link: "/contatti"
     },
     {
-    title: "Addetto alla Contabilità",
-    description: "Competenze in ambito contabile per la gestione aziendale.",
-    duration: "120 ore",
-    category: "Amministrazione",
-    link: "/corsi/addetto-contabilita"
+        title: "EIPASS Standard (Accredia) DigComp 2.2",
+        slug: 'eipass-standard-digicomp-2.2',
+        description:
+            "Versione avanzata, certificata Accredia, adatta a contesti MIUR e convalidata secondo standard europei.",
+        image: "/images/eipass/standard.jpg",
+        price: "198 €",
+        modality: "Online",
+        duration: "–", // non sempre specificato
+        link: "/contatti"
     },
     {
-    title: "Tecnico per la Gestione dei Rifiuti",
-    description: "Gestione del ciclo dei rifiuti e normative ambientali.",
-    duration: "200 ore",
-    category: "Ambiente",
-    link: "/corsi/gestione-rifiuti"
+        title: "EIPASS LIM",
+        slug: 'eipass-lim',
+        description:
+            "Uso didattico della Lavagna Interattiva Multimediale, valido per formazione docenti.",
+        image: "/images/eipass/lim.jpg",
+        price: "da €138",
+        modality: "Online",
+        duration: "–",
+        link: "/contatti"
     },
     {
-    title: "Operatore Socio-Sanitario (OSS)",
-    description: "Assistenza sanitaria e sociale per pazienti e strutture.",
-    duration: "1000 ore",
-    category: "Sanità",
-    link: "/corsi/oss"
+        title: "EIPASS Personale ATA",
+        slug: 'eipass-personale-ata',
+        description:
+            "Certificazione specifica per personale amministrativo, tecnico e ausiliario ATA.",
+        image: "/images/eipass/ata.jpg",
+        price: "da €138",
+        modality: "Online",
+        duration: "–",
+        link: "/contatti"
     },
     {
-    title: "Addetto alla Logistica e al Magazzino",
-    description: "Competenze nella gestione del magazzino e logistica aziendale.",
-    duration: "150 ore",
-    category: "Logistica",
-    link: "/corsi/logistica-magazzino"
+        title: "EIPASS CAD",
+        slug: 'eipass-cad',
+        description:
+            "Certificazione su disegno tecnico assistito CAD per professionisti e studenti.",
+        image: "/images/eipass/cad.jpg",
+        price: "da €138",
+        modality: "Online",
+        duration: "–",
+        link: "/contatti"
     },
     {
-    title: "Operatore di Cucina",
-    description: "Formazione per diventare cuoco professionista con competenze culinarie avanzate.",
-    duration: "400 ore",
-    category: "Ristorazione",
-    link: "/corsi/operatore-cucina"
+        title: "EIPASS Cybercrimes",
+        slug: 'eipass-cybercrimes',
+        description:
+            "Corso su sicurezza informatica e tecniche di prevenzione di cybercrimini.",
+        image: "/images/eipass/cybercrimes.jpg",
+        price: "da €138",
+        modality: "Online",
+        duration: "–",
+        link: "/contatti"
     },
     {
-    title: "Tecnico della Programmazione Software",
-    description: "Competenze avanzate nello sviluppo e nella programmazione di software.",
-    duration: "300 ore",
-    category: "Tecnologia",
-    link: "/corsi/tecnico-programmazione-software"
+        title: "EIPASS Web",
+        slug: 'eipass-web',
+        description:
+            "Certificazione per competenze su sviluppo web e strumenti online.",
+        image: "/images/eipass/web.jpg",
+        price: "da €138",
+        modality: "Online",
+        duration: "–",
+        link: "/contatti"
     },
     {
-    title: "Tecnico per l'Efficienza Energetica",
-    description: "Esperto nella valutazione e miglioramento dell'efficienza energetica degli edifici.",
-    duration: "250 ore",
-    category: "Ambiente",
-    link: "/corsi/efficienza-energetica"
-    },
-    {
-    title: "Addetto alla Segreteria con Competenze Informatiche",
-    description: "Competenze nella gestione di segreteria e utilizzo di strumenti informatici.",
-    duration: "120 ore",
-    category: "Amministrazione",
-    link: "/corsi/segreteria-informatica"
+        title: "EIPASS IT Security",
+        slug: 'eipass-it-security',
+        description:
+            "Focalizzato su sicurezza ICT, privacy e protezione dati.",
+        image: "/images/eipass/itsecurity.jpg",
+        price: "da €138",
+        modality: "Online",
+        duration: "–",
+        link: "/contatti"
     }
-    ];
-    
-export default coursesData;
+];
+
+export default eipassCourses;
+
