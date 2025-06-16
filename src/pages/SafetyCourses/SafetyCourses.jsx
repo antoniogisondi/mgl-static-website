@@ -3,10 +3,6 @@ import './SafetyCourses.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import { getCourses } from '../../service/apiCourses';
-import imgAid from '/img/primo-soccorso.jpg'
-import imgFire from '/img/antincendio.jpg'
-import imgWorker from '/img/formazione-lavoratori.jpg'
-import rspp from '/img/rspp.jpg'
 import { Link } from 'react-router-dom';
 
 function SafetyCourses() {

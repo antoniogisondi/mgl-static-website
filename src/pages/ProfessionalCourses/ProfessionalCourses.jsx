@@ -3,7 +3,6 @@ import './ProfessionalCourses.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import { getProfessionalCourses } from '../../service/apiCourses';
-import coursesData from '../../data/courses'; // Importa i dati dei corsi
 import { Link } from 'react-router-dom';
 
 const ProfessionalCourses = () => {
