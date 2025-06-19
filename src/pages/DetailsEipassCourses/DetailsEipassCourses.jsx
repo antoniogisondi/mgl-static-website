@@ -10,6 +10,7 @@ function DetailsEipassCourses() {
     const eipassCourse = eipassCourses.find(c => c.slug === slug)
     const [form, setForm] = useState({
         name: '',
+        surname: '',
         email: '',
         phone: '',
         message: ''
@@ -25,7 +26,7 @@ function DetailsEipassCourses() {
             })
 
             setMsg('Richiesta inviata con successo!');
-            setForm({ name: '', email: '', phone: '', message: '' });
+            setForm({ name: '', surname: '', email: '', phone: '', message: '' });
         } catch (error) {
             setMsg('Errore durante l’invio');
             console.error(error);
@@ -54,6 +55,15 @@ function DetailsEipassCourses() {
                         placeholder="Nome"
                         value={form.name}
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
+                        className="w-full p-2 border rounded"
+                    />
+
+                    <input
+                        type="text"
+                        required
+                        placeholder="Cognome"
+                        value={form.surname}
+                        onChange={(e) => setForm({ ...form, surname: e.target.value })}
                         className="w-full p-2 border rounded"
                     />
 
