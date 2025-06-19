@@ -4,6 +4,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Services from "./pages/Services/Services";
 import ProfessionalCourses from './pages/ProfessionalCourses/ProfessionalCourses'
 import SafetyCourses from './pages/SafetyCourses/SafetyCourses'
+import DetailsSafetyCourses from "./pages/DetailsSafetyCourses/DetailsSafetyCourses";
 import DetailsCourses from "./pages/DetailsCourses/DetailsCourses";
 import DetailsProfessionalCourses from "./pages/DetailsProfessionalCourses/DetailsProfessionalCourses";
 import EipassCourses from "./pages/EipassCourses/EipassCourses";
@@ -26,7 +27,8 @@ function App() {
           <Route path="/corsi-professionalizzanti" element={<ProfessionalCourses />} />
           <Route path="/corsi-professionalizzanti/:id" element={<DetailsProfessionalCourses />} />
           <Route path="/corsi-sicurezza" element={<SafetyCourses />} />
-          <Route path="/corsi-sicurezza/:id" element={<DetailsCourses/>} />
+          {/* <Route path="/corsi-sicurezza/:id" element={<DetailsCourses/>} /> */}
+          <Route path="/corsi-sicurezza/:slug" element={<DetailsSafetyCourses/>} />
           <Route path="/eipass" element={<EipassCourses/>} />
           <Route path="/eipass/:slug" element={<EipassDetailsPage/>} />
         </Routes>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import eipassCourses from '../../data/courses'
+import eipassCourses from '../../data/eipass-courses'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 

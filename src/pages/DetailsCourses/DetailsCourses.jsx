@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
-import { getCoursesById } from '../../service/apiCourses'
 import { sendContactRequest } from '../../service/apiCourses'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
+import './DetailsCourses.css'
 
 function DetailsCourses() {
     const {id} = useParams()
@@ -16,18 +16,18 @@ function DetailsCourses() {
     })
     const [msg, setMsg] = useState('')
 
-    useEffect(() => {
-        const fetchCourse = async () => {
-            try {
-                const data = await getCoursesById(id)
-                setCorso(data)
-            } catch (error) {
-                console.error('Errore caricamento corso:', error);
-            }
-        }
+    // useEffect(() => {
+    //     const fetchCourse = async () => {
+    //         try {
+    //             const data = await getCoursesById(id)
+    //             setCorso(data)
+    //         } catch (error) {
+    //             console.error('Errore caricamento corso:', error);
+    //         }
+    //     }
         
-        fetchCourse()
-    }, [id])
+    //     fetchCourse()
+    // }, [id])
 
     const handleSubmit = async (e) => {
         e.preventDefault()

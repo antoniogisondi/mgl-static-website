@@ -4,6 +4,7 @@ import { getProfessionalCoursesById } from '../../service/apiCourses'
 import { sendContactRequest } from '../../service/apiCourses'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
+import './DetailsProfessionalCourses.css'
 
 function DetailsProfessionalCourses() {
     const {id} = useParams()
@@ -12,26 +13,10 @@ function DetailsProfessionalCourses() {
         name: '',
         email: '',
         phone: '',
-        message: ''
+        message: '',
+        courseId: ''
     })
     const [msg, setMsg] = useState('')
-
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-        try {
-            await sendContactRequest({
-                ...form,
-                courseId: corso._id,
-                courseModel: 'ProfessionalCourse'
-            })
-
-            setMsg('Richiesta inviata con successo!');
-            setForm({ name: '', email: '', phone: '', message: '' });
-        } catch (error) {
-            setMsg('Errore durante l’invio');
-            console.error(error);
-        }
-    }
 
     useEffect(() => {
         const fetchCourse = async () => {
@@ -46,12 +31,29 @@ function DetailsProfessionalCourses() {
         fetchCourse()
     }, [id])
 
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+
+        try {
+            await sendContactRequest({
+                ...form,
+                courseId: corso._id,
+            })
+
+            setMsg('Richiesta inviata con successo!');
+            setForm({ name: '', email: '', phone: '', message: '' });
+        } catch (error) {
+            setMsg('Errore durante l’invio');
+            console.error(error);
+        }
+    }
+
     if (!corso) return <p>Caricamento...</p>;
 
     return (
         <>
             <Header/>
-            <div>
+            <div className='mt-5 pt-5'>
                 <h1>{corso.title}</h1>
                 <h2>{corso.subtitle}</h2>
                 <p>{corso.description}</p>

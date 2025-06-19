@@ -1,6 +1,3 @@
-// coursesData.js
-
-// src/data/eipassCourses.js
 const eipassCourses = [
     {
         title: "EIPASS 7 Moduli User",
