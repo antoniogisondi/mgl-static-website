@@ -1,13 +1,13 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import { useParams } from 'react-router-dom'
 import { sendContactRequest } from '../../service/apiCourses'
+import eipassCourses from '../../data/eipass-courses'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
-import './DetailsCourses.css'
 
-function DetailsCourses() {
-    const {id} = useParams()
-    const [corso, setCorso] = useState(null)
+function DetailsEipassCourses() {
+    const { slug } = useParams()
+    const eipassCourse = eipassCourses.find(c => c.slug === slug)
     const [form, setForm] = useState({
         name: '',
         email: '',
@@ -16,26 +16,12 @@ function DetailsCourses() {
     })
     const [msg, setMsg] = useState('')
 
-    // useEffect(() => {
-    //     const fetchCourse = async () => {
-    //         try {
-    //             const data = await getCoursesById(id)
-    //             setCorso(data)
-    //         } catch (error) {
-    //             console.error('Errore caricamento corso:', error);
-    //         }
-    //     }
-        
-    //     fetchCourse()
-    // }, [id])
-
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
             await sendContactRequest({
                 ...form,
-                courseId: corso._id,
-                courseModel: 'Course'
+                course: eipassCourse.title
             })
 
             setMsg('Richiesta inviata con successo!');
@@ -45,16 +31,19 @@ function DetailsCourses() {
             console.error(error);
         }
     }
-
-    if (!corso) return <p>Caricamento...</p>;
+    if (!eipassCourse) return <p>Corso non trovato</p>;
     
     return (
         <>
             <Header/>
-            <div className='mt-5 pt-5'>
-                <h1>{corso.title}</h1>
-                <p>{corso.description}</p>
-                {/* e così via... */}
+            <div className="container mt-5">
+                <h1>{eipassCourse.title}</h1>
+                <img src={eipassCourse.image} alt={eipassCourse.title} className="img-fluid mb-4" />
+                <p>{eipassCourse.description}</p>
+                <p><strong>Prezzo:</strong> {eipassCourse.price}</p>
+                <p><strong>Modalità:</strong> {eipassCourse.modality}</p>
+                <p><strong>Durata:</strong> {eipassCourse.duration}</p>
+                <a href="/contatti" className="btn btn-primary">Richiedi informazioni</a>
 
                 <form onSubmit={handleSubmit} className="space-y-4 mt-8 bg-gray-100 p-4 rounded">
                     <h3 className="text-xl font-bold">Richiedi informazioni</h3>
@@ -99,11 +88,10 @@ function DetailsCourses() {
 
                     {msg && <p className="text-sm mt-2">{msg}</p>}
                 </form>
-
             </div>
             <Footer/>
         </>
-    )
+        );
 }
 
-export default DetailsCourses
+export default DetailsEipassCourses

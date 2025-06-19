@@ -2,13 +2,12 @@ import Home from "./pages/Home/Home";
 import About from './pages/About/About'
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Services from "./pages/Services/Services";
-import ProfessionalCourses from './pages/ProfessionalCourses/ProfessionalCourses'
 import SafetyCourses from './pages/SafetyCourses/SafetyCourses'
 import DetailsSafetyCourses from "./pages/DetailsSafetyCourses/DetailsSafetyCourses";
-import DetailsCourses from "./pages/DetailsCourses/DetailsCourses";
+import ProfessionalCourses from './pages/ProfessionalCourses/ProfessionalCourses'
 import DetailsProfessionalCourses from "./pages/DetailsProfessionalCourses/DetailsProfessionalCourses";
 import EipassCourses from "./pages/EipassCourses/EipassCourses";
-import EipassDetailsPage from "./pages/EipassDetailsPage/EipassDetailsPage";
+import DetailsEipassCourses from "./pages/DetailsEipassCourses/DetailsEipassCourses";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "slick-carousel/slick/slick.css"
@@ -27,10 +26,9 @@ function App() {
           <Route path="/corsi-professionalizzanti" element={<ProfessionalCourses />} />
           <Route path="/corsi-professionalizzanti/:id" element={<DetailsProfessionalCourses />} />
           <Route path="/corsi-sicurezza" element={<SafetyCourses />} />
-          {/* <Route path="/corsi-sicurezza/:id" element={<DetailsCourses/>} /> */}
           <Route path="/corsi-sicurezza/:slug" element={<DetailsSafetyCourses/>} />
           <Route path="/eipass" element={<EipassCourses/>} />
-          <Route path="/eipass/:slug" element={<EipassDetailsPage/>} />
+          <Route path="/eipass/:slug" element={<DetailsEipassCourses/>} />
         </Routes>
       </Router>
     </>
