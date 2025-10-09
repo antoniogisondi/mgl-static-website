@@ -31,6 +31,7 @@ const Main = () => {
         { title: 'Valutazione dei Rischi', description: 'Analisi dettagliata dei rischi presenti nei luoghi di lavoro.' },
         { title: 'Formazione sulla Sicurezza', description: 'Corsi di formazione per lavoratori e datori di lavoro.' },
         { title: 'Piani di Emergenza', description: 'Elaborazione di piani di emergenza ed evacuazione.' },
+        { title: "Corsi Professionalizzanti Accreditati", description: "Formazione riconosciuta dalla Regione Basilicata per lo sviluppo professionale.", image: "/img/corsi-professionalizzanti.jpg", link: "/corsi-professionalizzanti" },
     ];
     const ServiceItem = ({ title, description }) => (
         <motion.div
