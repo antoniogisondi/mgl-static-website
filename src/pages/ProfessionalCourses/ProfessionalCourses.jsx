@@ -78,6 +78,7 @@ const ProfessionalCourses = () => {
               <div className="col-md-6 col-lg-3" key={course._id}>
                 <div className="card custom-card">
                   <div className="card-body">
+                    <img className='card-img-top' src={`${import.meta.env.VITE_API_URL}/${course.image}`} alt="" />
                     <h5 className="card-title">{course.title}</h5>
                     <p className="card-text">{course.description}</p>
                     <p><strong>Durata:</strong> {course.duration}</p>
