@@ -87,6 +87,10 @@ const ProfessionalCourses = () => {
                 </div>
               </div>
             ))}
+            <div className="col-md-6">
+              <a className='mx-2' href="/download/Avviso-di-selezione reSKILLING.pdf" download>Scarica l'avviso per i corsi reSkilling</a>
+              <a className='mx-2' href="/download/Avviso-di-selezione upSKILLING.pdf" download>Scarica l'avviso per i corsi upSkilling</a>
+            </div>
           </div>
         </div>
       </main>
