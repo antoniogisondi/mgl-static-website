@@ -16,6 +16,7 @@ const ProfessionalCourses = () => {
 
     useEffect(() => {
       getProfessionalCourses().then(setCourses).catch((err) => console.error('Errore fetch:', err))
+      console.log(courses)
     }, [])
   return (
     <>
@@ -72,21 +73,28 @@ const ProfessionalCourses = () => {
         </div> */}
 
         {/* Elenco dei corsi */}
-        <div className="container my-5">
-          <div className="row gy-4"> {/* Bootstrap `gy-4` per ridurre il gap */}
-            {courses.map((course) => (
-              <div className="col-md-6 col-lg-3" key={course._id}>
-                <div className="card custom-card">
-                  <div className="card-body">
-                    <img className='card-img-top' src={`${import.meta.env.VITE_API_URL}/${course.image}`} alt="" />
-                    <h5 className="card-title">{course.title}</h5>
-                    <p className="card-text">{course.description}</p>
-                    <p><strong>Durata:</strong> {course.duration}</p>
-                    <Link to={`/corsi-professionalizzanti/${course._id}`} className="btn btn-primary custom-btn">Scopri di più</Link>
+        <div className="container my-2">
+          <div className="row gy-2"> {/* Bootstrap `gy-4` per ridurre il gap */}
+            {Array.isArray(courses) && courses.length > 0 ? (
+              courses.map((course) => (
+                <div className="col-md-6 col-lg-3" key={course._id}>
+                  <div className="card custom-card">
+                    <div className="card-body">
+                      <img className='card-img-top' src={`${import.meta.env.VITE_API_URL}/${course.image}`} alt="" />
+                      <h5 className="card-title">{course.title}</h5>
+                      <p className="card-text">{course.description}</p>
+                      <p><strong>Durata:</strong> {course.duration}</p>
+                      <Link to={`/corsi-professionalizzanti/${course._id}`} className="btn btn-primary custom-btn">Scopri di più</Link>
+                    </div>
                   </div>
                 </div>
+              ))
+            ) : (
+              <div className="col-12 text-center py-5">
+                <h3>Al momento non ci sono corsi disponibili</h3>
+                <p>Torna a trovarci a breve oppure contattaci per informazioni.</p>
               </div>
-            ))}
+            )}
             <div className="col-md-6">
               <a className='mx-2' href="/download/Avviso-di-selezione reSKILLING.pdf" download>Scarica l'avviso per i corsi reSkilling</a>
               <a className='mx-2' href="/download/Avviso-di-selezione upSKILLING.pdf" download>Scarica l'avviso per i corsi upSkilling</a>
