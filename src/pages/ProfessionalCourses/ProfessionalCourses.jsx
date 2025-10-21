@@ -95,9 +95,13 @@ const ProfessionalCourses = () => {
                 <p>Torna a trovarci a breve oppure contattaci per informazioni.</p>
               </div>
             )}
-            <div className="col-md-6">
+            <div className="col-md-6 ">
               <a className='mx-2' href="/download/Avviso-di-selezione reSKILLING.pdf" download>Scarica l'avviso per i corsi reSkilling</a>
+              <p className='mx-2 paragraph'>Avviso pubblicato il 02/08/2025</p>
+            </div>
+            <div className="col-md-6">
               <a className='mx-2' href="/download/Avviso-di-selezione upSKILLING.pdf" download>Scarica l'avviso per i corsi upSkilling</a>
+              <p className='mx-2 paragraph'>Avviso pubblicato il 02/08/2025</p>
             </div>
           </div>
         </div>
